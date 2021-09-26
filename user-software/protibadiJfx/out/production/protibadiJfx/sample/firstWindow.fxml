@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="628.0" spacing="50.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FirstWindowController">
+   <children>
+      <Button mnemonicParsing="false" onAction="#TakeScreenshot" prefHeight="80.0" prefWidth="250.0" text="Take Screenshot" textFill="#267a8d">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="120.0" />
+         </VBox.margin>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#ViewAdminPanel" prefHeight="50.0" prefWidth="190.0" text="Admin Panel" textFill="#a33c3c">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="100.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

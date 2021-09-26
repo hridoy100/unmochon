@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="protibadiJfx_jar2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/protibadiJfx_jar2/protibadiJfx.zip!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/protibadiJfx_jar2/protibadiJfx.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

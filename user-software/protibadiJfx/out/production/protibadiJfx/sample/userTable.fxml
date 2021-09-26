@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="616.0" prefWidth="1000.0" styleClass="header-section" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserTableController">
+    <children>
+        <Button layoutX="22.0" layoutY="567.0" mnemonicParsing="false" onAction="#showHome" prefHeight="35.0" prefWidth="86.0" text="Home" />
+        <Button layoutX="894.0" layoutY="567.0" mnemonicParsing="false" onAction="#logoutFunc" prefHeight="35.0" prefWidth="86.0" text="log out" />
+        <TableView fx:id="tableView" layoutX="22.0" layoutY="87.0" prefHeight="457.0" prefWidth="960.0" />
+      <TextField fx:id="tokenField" layoutX="24.0" layoutY="17.0" prefHeight="54.0" prefWidth="759.0" promptText="Facebook Access Token" />
+      <Button layoutX="800.0" layoutY="17.0" mnemonicParsing="false" onAction="#updateAccessToken" prefHeight="54.0" prefWidth="179.0" text="Update Access Token" />
+    </children>
+</AnchorPane>

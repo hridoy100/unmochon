@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="protibadiJfx:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5aa2117d-4781-4dd4-a25f-0f80f6c910d0" name="Default Changelist" comment="completed" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1cHU8MhVPq5CvGIwgWptf6sMUCW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="protibadijfx" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\REVESoft\Unmochon\user-software\protibadiJfx" />
+      <recent name="I:\Codes\Java programming\protibadiJfx\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="DB" />
+      <recent name="sample" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="CryptoUtilsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="encryption.CryptoUtilsTest" />
+      <module name="protibadiJfx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="encryption.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileEncryptor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="encryption.FileEncryptor" />
+      <module name="protibadiJfx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="encryption.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <module name="protibadiJfx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.FileEncryptor" />
+        <item itemvalue="Application.CryptoUtilsTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5aa2117d-4781-4dd4-a25f-0f80f6c910d0" name="Default Changelist" comment="" />
+      <created>1588605782879</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588605782879</updated>
+      <workItem from="1588605787374" duration="422000" />
+      <workItem from="1590184856367" duration="42000" />
+      <workItem from="1592843607637" duration="1359000" />
+      <workItem from="1592893997255" duration="2383000" />
+      <workItem from="1592922971899" duration="1211000" />
+      <workItem from="1593700824041" duration="279000" />
+      <workItem from="1593703681453" duration="2468000" />
+      <workItem from="1593722363066" duration="2023000" />
+      <workItem from="1593756807636" duration="90000" />
+      <workItem from="1593757569554" duration="3566000" />
+      <workItem from="1593779166749" duration="23430000" />
+      <workItem from="1593883374336" duration="11466000" />
+      <workItem from="1593933942342" duration="11529000" />
+      <workItem from="1594421567346" duration="1708000" />
+      <workItem from="1594681757014" duration="13000" />
+      <workItem from="1595141909443" duration="4286000" />
+      <workItem from="1601090617570" duration="142000" />
+      <workItem from="1608138701267" duration="1686000" />
+      <workItem from="1608144295392" duration="270000" />
+      <workItem from="1608387866513" duration="4904000" />
+      <workItem from="1609772364625" duration="2209000" />
+      <workItem from="1609862770882" duration="2215000" />
+      <workItem from="1610198446222" duration="3520000" />
+      <workItem from="1615206288242" duration="143000" />
+      <workItem from="1632073928010" duration="5404000" />
+      <workItem from="1632167909230" duration="7803000" />
+      <workItem from="1632175861935" duration="145000" />
+      <workItem from="1632340644344" duration="8037000" />
+      <workItem from="1632352620694" duration="258000" />
+      <workItem from="1632677322368" duration="933000" />
+      <workItem from="1632685052255" duration="1686000" />
+    </task>
+    <task id="LOCAL-00001" summary="Screenshot Taken successfully.&#10;Major changes in database.&#10;------------&#10;screenshot_table -&gt; has 'id', 'userid', 'image_name' &#10;Controlled by 'insert-screenshot-table.php' using POST method.&#10;------------&#10;image_list -&gt; has 'image_name', 'image_blob' &#10;Controlled by 'insert-image-blob.php' using POST method.&#10;------------&#10;user_details -&gt; has 'userid', 'user_link' &#10;Controlled by 'insert-user-details.php' using POST method.&#10;------------&#10;Commented out facebook publish part for testing purpose.">
+      <created>1593886622255</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593886622255</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Database changes:&#10;TABLE: fb_token-----------------------&#10;get-fb-token.php uses GET method to get token&#10;set-fb-token.php uses POST method to set token&#10;--------------------------------------&#10;INSIDE SOFTWARE:::--------------------&#10;CommunicateWithPhp class updated.&#10;FB publish added.&#10;setToken()&#10;getToken()&#10;works&#10;---------------------------------------&#10;FAILED to fetch BLOB image. There might be a bug.&#10;Image is fetched using URL and stored to that URL when data is inserted.">
+      <created>1593977481863</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593977481863</updated>
+    </task>
+    <task id="LOCAL-00003" summary="changed CommunicateWithPhp file">
+      <created>1632170601699</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632170601699</updated>
+    </task>
+    <task id="LOCAL-00004" summary="changed CommunicateWithPhp file. file upload successful.">
+      <created>1632175910405</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632175910405</updated>
+    </task>
+    <task id="LOCAL-00005" summary="New encryption decryption added.">
+      <created>1632352502993</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1632352502993</updated>
+    </task>
+    <task id="LOCAL-00006" summary="completed">
+      <created>1632352745809</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1632352745809</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Screenshot Taken successfully.&#10;Major changes in database.&#10;------------&#10;screenshot_table -&gt; has 'id', 'userid', 'image_name' &#10;Controlled by 'insert-screenshot-table.php' using POST method.&#10;------------&#10;image_list -&gt; has 'image_name', 'image_blob' &#10;Controlled by 'insert-image-blob.php' using POST method.&#10;------------&#10;user_details -&gt; has 'userid', 'user_link' &#10;Controlled by 'insert-user-details.php' using POST method.&#10;------------&#10;Commented out facebook publish part for testing purpose." />
+    <MESSAGE value="Database changes:&#10;TABLE: fb_token-----------------------&#10;get-fb-token.php uses GET method to get token&#10;set-fb-token.php uses POST method to set token&#10;--------------------------------------&#10;INSIDE SOFTWARE:::--------------------&#10;CommunicateWithPhp class updated.&#10;FB publish added.&#10;setToken()&#10;getToken()&#10;works&#10;---------------------------------------&#10;FAILED to fetch BLOB image. There might be a bug.&#10;Image is fetched using URL and stored to that URL when data is inserted." />
+    <MESSAGE value="changed CommunicateWithPhp file" />
+    <MESSAGE value="changed CommunicateWithPhp file. file upload successful." />
+    <MESSAGE value="New encryption decryption added." />
+    <MESSAGE value="completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed" />
+  </component>
+</project>

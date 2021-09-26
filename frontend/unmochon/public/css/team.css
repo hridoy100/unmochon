@@ -1,0 +1,120 @@
+.elementor-widget-container {
+    color: #f44b4b;
+    font-size: 45px;
+    font-weight: 900;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-family: "Montserrat", Sans-serif;
+    line-height: 1;
+}
+.elementor-divider {
+    margin-top: 5px;
+    height: 5px;
+    background-color: #f44b4b;
+}
+.team-left-image {
+    background-image: url("http://banglachi.org/wp-content/uploads/2019/11/23-236664_tumblr-transparent-circle-border-circle-outline-transparent-blue1.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 200px 200px 200px 200px;
+    background-color: #fff;
+    box-shadow: 0 0.2rem 2.8rem rgba(36, 36, 36, 0.1);
+    padding: 10px;
+    margin: 1.25rem;
+    padding-bottom: 2.5rem !important;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+    box-shadow 0.3s, -webkit-border-radius 0.3s, -webkit-box-shadow 0.3s;
+}
+.team-left-image:hover {
+    background-image: url("http://banglachi.org/wp-content/uploads/2019/11/23-236664_tumblr-transparent-circle-border-circle-outline-transparent-blue1.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+.team-right-description {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    vertical-align: middle;
+    margin: 1rem;
+    text-align: justify;
+}
+.ha-member-figure {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 40px !important;
+    display: inline-block;
+    margin: 0 0 1.5rem !important;
+}
+.ha-member-figure img {
+    border-style: solid;
+    border-width: 6px 6px 6px 6px;
+    border-color: #ffffff;
+    border-radius: 220px 220px 220px 220px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.11);
+    width: 100%;
+    height: 100%;
+}
+.vertical-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ha-member-name {
+    font-weight: bold;
+    font-family: "Roboto Slab", Sans-serif;
+    margin-top: 20px;
+    margin-bottom: 0.5rem;
+    color: #151515;
+    font-size: 18px;
+    line-height: 1.4;
+}
+.ha-member-position {
+    margin-bottom: 20px;
+color: #1c726a;
+font-weight: 500;
+font-family: "Roboto", Sans-serif;
+font-size: 14px;
+}
+.ha-member-links > a {
+    padding: 4px;
+    font-size: 18px;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #d1d1d1;
+    border-radius: 20px 20px 20px 20px;
+    color: #ffffff;
+    background-color: #7a7a7a;
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    transition: all 0.2s;
+}
+
+.ha-member-links > a > i {
+    width: 1em;
+    height: 1em;
+}
+
+.ha-member-links > a:not(:last-child) {
+    margin-right: 20px;
+}
+.ha-member-links > .elementor-repeater-item-ea6a110:hover, .ha-member-links > .elementor-repeater-item-ea6a110:focus {
+    color: #ffffff;
+    background-color: #3b5998;
+    border-color: #6ec1e4;
+}
+.ha-member-links > .elementor-repeater-item-1022560:hover, .ha-member-links > .elementor-repeater-item-1022560:focus {
+    color: #ffffff;
+    background-color: #6ec1e4;
+}
+.ha-member-links > .elementor-repeater-item-dd6ffee:hover, .ha-member-links > .elementor-repeater-item-dd6ffee:focus {
+    color: #ffffff;
+    background-color: #d44638;
+}
+.ha-member-links > .elementor-repeater-item-b6a84c5:hover, .ha-member-links > .elementor-repeater-item-b6a84c5:focus {
+    color: #ffffff;
+    background-color: #006cbf;
+    border-color: #61ce70;
+}
+

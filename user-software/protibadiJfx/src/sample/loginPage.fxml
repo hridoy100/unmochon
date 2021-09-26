@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="63.0" prefWidth="600.0" spacing="20.0">
+               <children>
+                  <Label text="Username:">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <TextField id="username" fx:id="usernameField" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="72.0" prefHeight="62.0" prefWidth="600.0" spacing="20.0">
+               <children>
+                  <Label text="Password:">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <TextField id="password" fx:id="passwordField" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="65.0" prefWidth="600.0" spacing="100.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#GoToFirstWindow" text="Back" textFill="#2883a4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin></Button>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#LoginAction" text="Submit" textFill="#198d28">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Label text="Unmochon Admin Panel" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>

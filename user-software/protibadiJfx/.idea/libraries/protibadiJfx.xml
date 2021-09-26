@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="protibadiJfx">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jar_files.zip!/" />
+      <root url="jar://$PROJECT_DIR$/jds-3.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mysql-connector-java-5.1.45-bin.zip!/" />
+      <root url="jar://$PROJECT_DIR$/json-simple-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mysql-connector-java-5.1.45-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/json-simple-1.1.jar.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
