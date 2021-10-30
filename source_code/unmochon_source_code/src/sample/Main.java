@@ -33,8 +33,8 @@ public class Main extends Application {
         stage = primaryStage;
         imageEditor = new ImageEditor();
         imageEditor.SetMain(this);
-//        ShowFirstWindow();
-        ShowImageEditor("Screenshot_43.png");
+        ShowFirstWindow();
+//        ShowImageEditor("Screenshot_43.png");
     }
     public void ShowFirstWindow() throws IOException {
         // XML Loading using FXMLLoader
