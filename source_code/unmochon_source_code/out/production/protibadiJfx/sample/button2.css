@@ -1,0 +1,157 @@
+#close {
+  -fx-background-color: linear-gradient(#f2f2f2, #d6d6d6), linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%), linear-gradient(#dddddd 0%, #f6f6f6 50%);
+  -fx-background-radius: 8, 7, 6;
+  -fx-background-insets: 0, 1, 2;
+  -fx-border-radius:2,2,2;
+  -fx-border-width:1;
+  -fx-border-color:#111111;
+  -fx-text-fill: black;
+  -fx-font-size:15;
+  -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+#close:hover {
+  -fx-background-color: #dddddd;
+}
+
+#close:pressed {
+  -fx-background-color: #525256;
+}
+
+#previous {
+  -fx-background-color: linear-gradient(#f2f2f2, #d6d6d6), linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%), linear-gradient(#dddddd 0%, #f6f6f6 50%);
+  -fx-background-radius: 8, 7, 6;
+  -fx-background-insets: 0, 1, 2;
+  -fx-border-radius:2,2,2;
+  -fx-border-width:1;
+  -fx-border-color:#111111;
+  -fx-text-fill: black;
+  -fx-font-size:15;
+  -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+#previous:hover {
+  -fx-background-color: #dddddd;
+}
+
+#previous:pressed {
+  -fx-background-color: #525256;
+}
+
+#next {
+  -fx-background-color:#8280F7;
+  -fx-background-radius: 8, 7, 6;
+  -fx-background-insets: 0, 1, 2;
+  -fx-border-radius:2,2,2;
+  -fx-border-width:1;
+  -fx-border-color:#1816B4;
+  -fx-text-fill: white;
+  -fx-font-size:19;
+  -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+#next:hover {
+  -fx-background-color: #C8C7FC;
+}
+
+#next:pressed {
+  -fx-background-color: #0F0E5A;
+}
+
+
+#text *.text{
+  -fx-text-alignment: center;
+}
+#text {
+  -fx-background-color:#DEDEDF;
+  -fx-font-size:15;
+}
+
+
+#cancel {
+  -fx-background-color: linear-gradient(#f2f2f2, #d6d6d6), linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%), linear-gradient(#dddddd 0%, #f6f6f6 50%);
+  -fx-background-radius: 8, 7, 6;
+  -fx-background-insets: 0, 1, 2;
+  -fx-border-radius:2,2,2;
+  -fx-border-width:0;
+  -fx-border-color:#111111;
+  -fx-text-fill: black;
+  -fx-font-size:15;
+  -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+#cancel:hover {
+  -fx-background-color: #dddddd;
+}
+
+#cancel:pressed {
+  -fx-background-color: #525256;
+}
+
+#ok {
+  -fx-background-color:#8280F7;
+  -fx-background-radius: 8, 7, 6;
+  -fx-background-insets: 0, 1, 2;
+  -fx-border-radius:2,2,2;
+  -fx-border-width:0;
+  -fx-border-color:#1816B4;
+  -fx-text-fill: white;
+  -fx-font-size:15;
+  -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+#ok:hover {
+  -fx-background-color: #C8C7FC;
+}
+
+#ok:pressed {
+  -fx-background-color: #0F0E5A;
+}
+
+
+#output {
+  -fx-text-alignment: center;
+  -fx-font-size:20;
+  -fx-background-color:#f0f0f0;
+  -fx-control-inner-background:#f0f0f0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    border: none;
+        overflow: auto;
+        outline: none;
+
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+
+        resize: none;
+}
+
+.text-area {
+}
+
+#output .content {
+    -fx-background-color:-fx-control-inner-background;
+}
+#output:focused .content {
+    -fx-background-color:-fx-control-inner-background;
+}
+
+#output:focused {
+    -fx-background-color: linear-gradient(to bottom, derive(-fx-text-box-border, -10%), -fx-text-box-border), -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 3, 2;
+}
+
+
+#output *.text{
+  -fx-text-alignment: center;
+  -fx-font-size:20;
+}
+#root {
+  -fx-background-color:#f0f0f0;
+  -fx-control-inner-background:#f0f0f0;
+  -fx-highlight-fill: lightgray;
+    outline:none;
+    border:none;
+}

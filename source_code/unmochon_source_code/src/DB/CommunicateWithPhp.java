@@ -379,8 +379,6 @@ public class CommunicateWithPhp {
 
     public boolean InsertDetailsIntoDB3(String ID, String link, String imgFileName) {
 
-
-
         URL userDetailsUrl, imgUploadUrl;
         try {
             userDetailsUrl = new URL("http://unmochon.org/upload_details");

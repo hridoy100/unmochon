@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.media.MediaPlayer?>
+<?import javafx.scene.media.Media?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewFirstController">
+   <children>
+      <AnchorPane fx:id="image_wrapper" layoutX="3.0" layoutY="60.0" prefHeight="1405.0" prefWidth="1848.0" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <ImageView fx:id="container" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            </ImageView>
+            <StackPane fx:id="scontainer" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Canvas fx:id="can" height="619.0" width="1032.0" />
+                  <Canvas fx:id="drawingcanvas" height="619.0" width="1032.0" />
+               </children></StackPane>
+         </children>
+      </AnchorPane>
+      <HBox fx:id="hBox" prefHeight="60.0" prefWidth="854.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="bi1" onAction="#takeScreenshot" prefHeight="60.0" prefWidth="310.0" text="Screenshot">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="false">
+                     <image>
+                        <Image url="myfont/camera.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <MenuButton fx:id="bi2" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="60" minHeight="60" prefHeight="60.0" prefWidth="258.0" text="fdf">
+               <graphic>
+                  <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="false">
+                     <image>
+                        <Image url="myfont/edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <items>
+                  <MenuItem fx:id="gi" mnemonicParsing="false" onAction="#greenselected" style="-fx-padding: 0 150 0 0" text="Green">
+                     <graphic>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="green" height="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="30.0" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="ri" mnemonicParsing="false" onAction="#redselected" text="Red">
+                     <graphic>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="red" height="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="30.0" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="bi" mnemonicParsing="false" onAction="#blueselected" text="Blue">
+                     <graphic>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="blue" height="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="30.0" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="bli" mnemonicParsing="false" onAction="#blackselected" text="Black">
+                     <graphic>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="black" height="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="30.0" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="eraser" mnemonicParsing="false" onAction="#eraserselected" text="Eraser">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="30.0">
+                           <image>
+                              <Image url="myfont/eraser.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="bwidth" mnemonicParsing="false" text="Brush Width">
+                     <graphic>
+                        <Slider fx:id="slider" />
+                        <ProgressBar fx:id="pb" progress="0" />
+                     </graphic>
+                  </MenuItem>
+               </items>
+            </MenuButton>
+            <Button fx:id="bi3" layoutX="10.0" layoutY="10.0" onAction="#upload" prefHeight="60.0" prefWidth="270.0" text="Upload">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="false">
+                     <image>
+                        <Image url="myfont/cloud-computing.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bi4" layoutX="199.0" layoutY="10.0" onAction="#save" prefHeight="60.0" prefWidth="265.0" text="Save">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="false">
+                     <image>
+                        <Image url="myfont/floppy-disk.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bi5" layoutX="10.0" layoutY="10.0" onAction="#about" prefHeight="60.0" prefWidth="260.0" text="About">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="false">
+                     <image>
+                        <Image url="myfont/about-us.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+
+            <MenuButton fx:id="bi6" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="60" minHeight="60" prefHeight="60.0" prefWidth="300.0" text="fdf">
+               <graphic>
+                  <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="false">
+                     <image>
+                        <Image url="myfont/questions.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <items>
+                  <MenuItem fx:id="hints" mnemonicParsing="false" onAction="#hintsselected" style="-fx-padding: 0 150 0 0" text="Guide">
+                     <graphic>
+                        <ImageView fitHeight="30" fitWidth="30" pickOnBounds="true" preserveRatio="false">
+                           <image>
+                              <Image url="myfont/tips.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="uvideo" mnemonicParsing="false" onAction="#uvideoselected" text="Video">
+                     <graphic>
+                        <ImageView fitHeight="30" fitWidth="30" pickOnBounds="true" preserveRatio="false">
+                           <image>
+                              <Image url="myfont/video.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+               </items>
+            </MenuButton>
+
+                  
+                              <Button fx:id="bi7" layoutX="199.0" layoutY="10.0" onAction="#exitApp" prefHeight="60.0" prefWidth="252.0" text="Close">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="false">
+                     <image>
+                        <Image url="myfont/cancel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

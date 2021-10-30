@@ -1,52 +1,148 @@
 package sample;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Insets;
-import javafx.geometry.Pos;
 import javafx.geometry.Rectangle2D;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Alert;
+import javafx.scene.control.MenuBar;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaView;
+import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
 import java.io.File;
 import java.io.IOException;
 
-public class Main extends Application {
 
+public class Main extends Application {
+    public static String ID=null;
+    public static Class aClass;
+    public static String selectedText=null;
     Stage stage;
     public IEImagePane imagePane;
-    public IEFileManager fileManager;
-    ImageEditor imageEditor;
+    public static IEFileManager fileManager;
+    public static ImageEditor imageEditor;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
         stage = primaryStage;
         imageEditor = new ImageEditor();
         imageEditor.SetMain(this);
-//        ShowFirstWindow();
-        ShowImageEditor("Screenshot_43.png");
+        aClass=getClass();
+        //loadFont();
+        ShowFirstWindow();
+        //loadTimer();
+        //ShowImageEditor("Screenshot_43.png");
+        //raf();
     }
+
+    private void raf() {
+
+        try{
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("user_input.fxml"));
+            Parent root = loader.load();
+            // Loading the controller
+            UserInput firstWindowController = loader.getController();
+            // Set the primary stage
+            Stage stage=new Stage();
+            Scene scene=new Scene(root);
+            stage.setScene(scene);
+            stage.setResizable(true);
+            stage.setTitle("User Info Collection");
+            stage.setMinHeight(400);
+            stage.setMinWidth(550);
+            stage.show();
+            firstWindowController.stage=stage;
+        }catch(Exception e){e.printStackTrace();}
+
+    }
+
+    public static void loadTimer() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            //loader.setLocation(getClass().getResource("confirmdialouge.fxml"));
+            //loader.setLocation(getClass().getResource("hints.fxml"));
+            loader.setLocation(aClass.getResource("timer.fxml"));
+            Parent root = loader.load();
+            // Loading the controller
+            Timer hintsController = loader.getController();
+            //ConfirmDialouge hintsController = loader.getController();
+            //firstWindowController.SetMain(main);
+            // Set the primary stage
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.initStyle(StageStyle.UNDECORATED);
+            scene.setFill(Color.TRANSPARENT);
+            //scene.getStylesheets().add(this.getClass().getResource("style.css").toExternalForm());
+            stage.setResizable(true);
+            stage.initStyle(StageStyle.TRANSPARENT);
+            stage.setOpacity(0.0f);
+            stage.setAlwaysOnTop(true);
+            stage.initModality(Modality.WINDOW_MODAL);
+            stage.show();
+            System.out.println("stage called");
+            hintsController.stage=stage;
+            stage.setIconified(true);
+            Thread thread=new Thread(){
+                @Override
+                public void run()
+                {
+                    try {
+                        Thread.sleep(444);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    Platform.runLater(new Runnable() {
+                        @Override
+                        public void run() {
+                            Timer.stage.setIconified(false);
+                        }
+                    });
+                }
+            };
+            thread.start();
+
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+            System.out.println(""+e.getMessage());
+        }
+    }
+
+    private void loadFont() {
+        //Font.loadFont(App.class.getResource("fontawesome_solid.otf").toExternalForm(), 10);
+    }
+
     public void ShowFirstWindow() throws IOException {
         // XML Loading using FXMLLoader
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("firstWindow.fxml"));
+        loader.setLocation(getClass().getResource("new_first.fxml"));
         Parent root = loader.load();
         // Loading the controller
-        FirstWindowController firstWindowController = loader.getController();
+        NewFirstController firstWindowController = loader.getController();
         firstWindowController.SetMain(this);
         // Set the primary stage
         stage.setTitle("Welcome To Unmochon");
-        stage.setScene(new Scene(root));
+        NewFirstController.stage=stage;
+        Scene scene=new Scene(root);
+        stage.setScene(scene);
+        stage.setMinWidth(800);
+        stage.setMinHeight(300);
+        scene.getStylesheets().add(this.getClass().getResource("style.css").toExternalForm());
+        stage.setResizable(true);
         stage.show();
 //        try {
 //            InetAddress addr = InetAddress. getByName("198.211.96.87");
@@ -64,7 +160,7 @@ public class Main extends Application {
 //                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
 //                alert.setTitle("Correct Credentials");
 //                alert.setHeaderText("correct Credentials");
-//                alert.setContentText("connection successful");
+//                al/ert.setContentText("connection successful");
 //                alert.showAndWait();
 //            }
 //        }
@@ -151,8 +247,6 @@ public class Main extends Application {
         final IEToolPane toolPane = new IEToolPane(toolManager);
         final IEColorPane colorPane = new IEColorPane(toolManager);
         imagePane = new IEImagePane(toolManager);
-
-
         fileManager=imageEditor.initFileManager(fileName);
         menuBar.getMenus().addAll(imageEditor.initMenus());
 
@@ -250,6 +344,49 @@ public class Main extends Application {
             //showErrorDialog("There was an error opening the selected image.", stage);
         }
 
+    }
+    public static void showMessageold(String fheading,String fdescription,String filepath)
+    {
+        Alert alert;
+        if(filepath.equals("icons/close.png"))
+            alert=new Alert(Alert.AlertType.ERROR);
+        else
+            alert=new Alert(Alert.AlertType.INFORMATION);
+        alert.setHeaderText(fheading);
+        alert.setContentText(fdescription);
+        alert.showAndWait();
+//                alert.setHeaderText("Incorrect Credentials");
+//                alert.setContentText("The username and password you provided is not correct.");
+//                alert.showAndWait();
+    }
+
+    public static void showMessage(String fheading,String fdescription,String filepath)
+    {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(aClass.getResource("confirmdialouge.fxml"));
+            //loader.setLocation(getClass().getResource("hints.fxml"));
+            Parent root = loader.load();
+            // Loading the controller
+            //HintsController hintsController = loader.getController();
+            ConfirmDialouge hintsController = loader.getController();
+            //firstWindowController.SetMain(main);
+            // Set the primary stage
+            Stage stage = new Stage();
+            stage.setTitle("Message");
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            //stage.initStyle(StageStyle.UNDECORATED);
+            //scene.getStylesheets().add(this.getClass().getResource("style.css").toExternalForm());
+            stage.setResizable(false);
+            stage.show();
+            hintsController.stage=stage;
+            hintsController.showMessage(fheading,fdescription,filepath);
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+            System.out.println(""+e.getMessage());
+        }
     }
 
     public static void main(String[] args) {

@@ -6,6 +6,8 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 
+import static sample.NewFirstController.editColor;
+
 public class IEToolManager implements EventHandler<MouseEvent> {
 	
 	private 	   IETool 		 curTool;
@@ -26,11 +28,11 @@ public class IEToolManager implements EventHandler<MouseEvent> {
 	{
 		curColor = c;
 	}
-	
 	@Override
 	public void handle(MouseEvent me) {
 		GraphicsContext gc = ((Canvas)me.getSource()).getGraphicsContext2D();
-		gc.setFill(curColor);
+		if(editColor!=null)
+			gc.setFill(editColor);
 		curTool.handleMouseAction(me, gc);
 	}
 }
