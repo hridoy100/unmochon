@@ -46,15 +46,16 @@ public class UserInput implements Initializable {
     void OKAction()
     {
         try {
-            UserInputNext2.name=name_inp.getText().toString();
-            UserInputNext2.contact=contact_inp.getText().toString();
-            UserInputNext2.comment=comment_inp.getText().toString();
+            UserInputNext2.name=name_inp.getText();
+            UserInputNext2.contact=contact_inp.getText();
+            UserInputNext2.comment=comment_inp.getText();
+
+            
 
             double x=simage_wrapper.getScaleX();
             double y=simage_wrapper.getScaleY();
             simage_wrapper.setScaleX(1);
             simage_wrapper.setScaleY(1);
-
 
             BufferedImage bImage = SwingFXUtils.fromFXImage(simage_wrapper.snapshot(null, null), null);
             image2 = SwingFXUtils.toFXImage(bImage, null);

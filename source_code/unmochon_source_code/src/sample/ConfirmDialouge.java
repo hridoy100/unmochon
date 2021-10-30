@@ -42,10 +42,15 @@ public class ConfirmDialouge implements Initializable {
 
     public void okAction(ActionEvent actionEvent) {
         stage.close();
-        if(UserInputNext.stage!=null)
-            UserInputNext.stage.close();
-        if(UserInput.stage!=null)
-            UserInput.stage.close();
+        try {
+            if (UserInputNext2.stage != null)
+                UserInputNext2.stage.close();
+            if (UserInput.stage != null)
+                UserInput.stage.close();
+        }catch (Exception e)
+        {
+
+        }
     }
 
     public void showMessage(String fheading,String fdescription,String filepath)

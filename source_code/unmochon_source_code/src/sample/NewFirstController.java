@@ -664,6 +664,7 @@ public class NewFirstController implements Initializable {
                     UserInput.stage=null;
                 }catch (Exception e)
                 {
+                    e.printStackTrace();
                 }
             }
             FXMLLoader loader = new FXMLLoader();
@@ -682,7 +683,9 @@ public class NewFirstController implements Initializable {
             stage.show();
             //stage.initModality(Modality.APPLICATION_MODAL);
             firstWindowController.stage=stage;
-        }catch(Exception e){e.printStackTrace();}
+        }catch(Exception e){
+            e.printStackTrace();
+        }
 
     }
 
@@ -791,9 +794,37 @@ public class NewFirstController implements Initializable {
         return result;
     }
 
+    private boolean isBrowserRunning(){
+        try {
+            String line;
+            Process p = Runtime.getRuntime().exec
+                    (System.getenv("windir") +"\\system32\\"+"tasklist.exe");
+            BufferedReader input =
+                    new BufferedReader(new InputStreamReader(p.getInputStream()));
+            while ((line = input.readLine()) != null) {
+                System.out.println(line); //<-- Parse data here.
+                if(line.contains("chrome") || line.contains("msedge") || line.contains("firefox")) {
+                    input.close();
+                    return true;
+                }
+            }
+            input.close();
+        } catch (Exception err) {
+            err.printStackTrace();
+        }
+        return false;
+    }
+
+
+
+
     @FXML
     private void takeScreenshot()
     {
+        if(!isBrowserRunning()){
+            main.showMessageold("Browser Tab is not open", "You cannot take screenshot without browser opened", "icons/close.png");
+            return;
+        }
         //showTimer();
         //main.stage.setIconified(true);
         editColor=null;
@@ -854,17 +885,20 @@ public class NewFirstController implements Initializable {
                     Thread.sleep(100);
 
                     try {
+                        System.out.println("before fullscreen capture");
                         FullScreenCapture fullScreenCapture = new FullScreenCapture();
                         fullScreenCapture.SetMain(main);
 
                         if (fullScreenCapture.CaptureDetails()) {
+                            System.out.println("successful");
                             ///ShowAlert("Correct Credentials", "Screenshot successful", "Successfully added to database", "CONFIRMATION");
                         } else {
+                            System.out.println("Failed");
                             ///ShowAlert("Incorrect Credentials", "Incorrect Credentials", "The username and password you provided is not correct.", "ERROR");
                         }
                     }catch (Exception e)
                     {
-
+                        e.printStackTrace();
                     }
                     sleep(100);
                 } catch (InterruptedException e) {

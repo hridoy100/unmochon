@@ -6,31 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5aa2117d-4781-4dd4-a25f-0f80f6c910d0" name="Default Changelist" comment="completed">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/NewDrawings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/NewFirstController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/new_first.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/protibadiJfx_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/app_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/protibadiJfx/DB/CommunicateWithPhp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/protibadiJfx/DB/CommunicateWithPhp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/protibadiJfx/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/protibadiJfx/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/protibadiJfx/encryption/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/protibadiJfx/encryption/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/protibadiJfx/sample/FullScreenCapture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/protibadiJfx/sample/FullScreenCapture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/protibadiJfx/sample/HttpPost.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/protibadiJfx/sample/HttpPost.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/protibadiJfx/sample/IEPencil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/protibadiJfx/sample/IEPencil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/protibadiJfx/sample/IEToolManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/protibadiJfx/sample/IEToolManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/protibadiJfx/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/protibadiJfx/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DB/CommunicateWithPhp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/CommunicateWithPhp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/encryption/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/encryption/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/FullScreenCapture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FullScreenCapture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/HttpPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/HttpPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/IEPencil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/IEPencil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/IEToolManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/IEToolManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="5aa2117d-4781-4dd4-a25f-0f80f6c910d0" name="Default Changelist" comment="completed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../unmochon (5th copy)/source_code/unmochon_source_code" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../REVESoft/Unmochon/source_code/unmochon_source_code" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -99,19 +75,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CryptoUtilsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="encryption.CryptoUtilsTest" />
       <module name="protibadiJfx" />
@@ -201,6 +164,8 @@
       <workItem from="1632352620694" duration="258000" />
       <workItem from="1632677322368" duration="933000" />
       <workItem from="1632685052255" duration="1686000" />
+      <workItem from="1635568474064" duration="5242000" />
+      <workItem from="1635577158401" duration="7425000" />
     </task>
     <task id="LOCAL-00001" summary="Screenshot Taken successfully.&#10;Major changes in database.&#10;------------&#10;screenshot_table -&gt; has 'id', 'userid', 'image_name' &#10;Controlled by 'insert-screenshot-table.php' using POST method.&#10;------------&#10;image_list -&gt; has 'image_name', 'image_blob' &#10;Controlled by 'insert-image-blob.php' using POST method.&#10;------------&#10;user_details -&gt; has 'userid', 'user_link' &#10;Controlled by 'insert-user-details.php' using POST method.&#10;------------&#10;Commented out facebook publish part for testing purpose.">
       <created>1593886622255</created>

@@ -47,11 +47,11 @@ public class HintsLatest implements Initializable {
         try {
             hintsDataList.clear();
             hintsDataList.add(new HintsData("1. Open a browser tab and go-to messenger.\n" +
-                    "2. Open our application and you will see a window like this.\n" +
-                    "3. Click on the screenshot button to take a screenshot.", "/1.png"));
+                    "2. Open our application and keep it just above the messengar tab like this.\n" +
+                    "3. Click on the screenshot button and wait for a while to take a screenshot.", "/1.png"));
             hintsDataList.add(new HintsData("1. Click on Edit and you will see a color bar with eraser and brash width.\n" +
                     "2. Choose color and brush width appropriately and hide sensitive information of the image if you want.\n" +
-                    "3. You can remove your drawings by using the brush.", "/2.png"));
+                    "3. You can remove your drawings by using the eraser.", "/2.png"));
             hintsDataList.add(new HintsData("1. Click Upload if you want to upload the screenshot.\n" +
                     "2  A new window will appear and you can share your identification if you want.\n" +
                     "3. Click on Next to proceed.", "/3.png"));

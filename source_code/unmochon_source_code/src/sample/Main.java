@@ -21,8 +21,7 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 
 
 public class Main extends Application {
@@ -132,6 +131,7 @@ public class Main extends Application {
         loader.setLocation(getClass().getResource("new_first.fxml"));
         Parent root = loader.load();
         // Loading the controller
+
         NewFirstController firstWindowController = loader.getController();
         firstWindowController.SetMain(this);
         // Set the primary stage
@@ -345,7 +345,7 @@ public class Main extends Application {
         }
 
     }
-    public static void showMessageold(String fheading,String fdescription,String filepath)
+    public void showMessageold(String fheading,String fdescription,String filepath)
     {
         Alert alert;
         if(filepath.equals("icons/close.png"))
