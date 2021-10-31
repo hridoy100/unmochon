@@ -49,7 +49,7 @@ public class FullScreenCapture {
     private static final long serialVersionUID = 1L;
     //public static void main(String[] args) throws UnsupportedFlavorException {
     public boolean CaptureDetails() throws UnsupportedFlavorException {
-        inserted = false;
+        inserted = true;
         //FullScreenCapture f = new FullScreenCapture();
         try {
 
@@ -98,6 +98,7 @@ public class FullScreenCapture {
                     }catch (Exception e)
                     {
                         e.printStackTrace();
+                        inserted = false;
                     }
                 }
             });
@@ -179,7 +180,8 @@ public class FullScreenCapture {
                             canvas.getGraphicsContext2D().drawImage(image, 0, 0, image.getWidth(), image.getHeight());
                         }catch (Exception e)
                         {
-
+                            e.printStackTrace();
+                            inserted=false;
                         }
                         dcanvas.getGraphicsContext2D().clearRect(0,0,5000,5000);
                         simage_wrapper.setScaleX(0.4*width/window_width);
@@ -210,11 +212,13 @@ public class FullScreenCapture {
             catch (Exception e)
             {
                 e.printStackTrace();
+                inserted=false;
             }
 
 
         } catch (AWTException | IOException | InterruptedException ex) {
             System.err.println(ex);
+            inserted=false;
         }
         return inserted;
     }

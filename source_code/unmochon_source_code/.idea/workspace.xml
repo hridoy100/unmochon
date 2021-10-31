@@ -6,7 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5aa2117d-4781-4dd4-a25f-0f80f6c910d0" name="Default Changelist" comment="completed" />
+    <list default="true" id="5aa2117d-4781-4dd4-a25f-0f80f6c910d0" name="Default Changelist" comment="completed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/CommunicateWithPhp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/CommunicateWithPhp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/FullScreenCapture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/FullScreenCapture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/HttpPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/HttpPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/NewFirstController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/NewFirstController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/UserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/UserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/UserInputNext2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/UserInputNext2.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +55,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../REVESoft/Unmochon/source_code/unmochon_source_code" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -114,6 +122,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -166,6 +187,8 @@
       <workItem from="1632685052255" duration="1686000" />
       <workItem from="1635568474064" duration="5242000" />
       <workItem from="1635577158401" duration="7425000" />
+      <workItem from="1635601266201" duration="1539000" />
+      <workItem from="1635700730382" duration="4250000" />
     </task>
     <task id="LOCAL-00001" summary="Screenshot Taken successfully.&#10;Major changes in database.&#10;------------&#10;screenshot_table -&gt; has 'id', 'userid', 'image_name' &#10;Controlled by 'insert-screenshot-table.php' using POST method.&#10;------------&#10;image_list -&gt; has 'image_name', 'image_blob' &#10;Controlled by 'insert-image-blob.php' using POST method.&#10;------------&#10;user_details -&gt; has 'userid', 'user_link' &#10;Controlled by 'insert-user-details.php' using POST method.&#10;------------&#10;Commented out facebook publish part for testing purpose.">
       <created>1593886622255</created>
@@ -235,16 +258,5 @@
     <MESSAGE value="New encryption decryption added." />
     <MESSAGE value="completed" />
     <option name="LAST_COMMIT_MESSAGE" value="completed" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sample/UserInputNext2.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

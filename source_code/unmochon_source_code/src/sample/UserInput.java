@@ -50,7 +50,9 @@ public class UserInput implements Initializable {
             UserInputNext2.contact=contact_inp.getText();
             UserInputNext2.comment=comment_inp.getText();
 
-            
+            System.out.println("name: " + UserInputNext2.name + "\n"+
+                    "contact: " + UserInputNext2.contact+"\n"+
+                    "comment: " + UserInputNext2.comment);
 
             double x=simage_wrapper.getScaleX();
             double y=simage_wrapper.getScaleY();
@@ -89,7 +91,6 @@ public class UserInput implements Initializable {
         }catch (Exception e)
         {
             e.printStackTrace();
-            System.out.println(""+e.getMessage());
         }
     }
 

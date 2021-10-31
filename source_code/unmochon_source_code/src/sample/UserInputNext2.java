@@ -11,13 +11,11 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextArea;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import javax.imageio.ImageIO;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.net.URL;
@@ -241,7 +239,7 @@ public class UserInputNext2 implements Initializable {
                             tempfile = outputFile;
                         }catch (Exception e)
                         {
-
+                            e.printStackTrace();
                         }
 
                         uploadToServer(name,contact,comment);
