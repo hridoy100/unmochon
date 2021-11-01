@@ -46,6 +46,7 @@ import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.Timestamp;
 import java.util.Date;
@@ -217,14 +218,22 @@ public class NewFirstController implements Initializable {
                 //image2 = SwingFXUtils.toFXImage(bImage, null);
                 ImageIO.write(bImage, "png", tempfile);
 
+                Files.delete(tempfile.toPath());
                 Main.showMessage("Submission Successful", "", "/check.png");
             } else {
-                initialPhase();
-                Main.showMessage("Submission Failed", "", "/close.png");
-                //tempfile.delete();
+                //initialPhase();
+
                 BufferedImage bImage = SwingFXUtils.fromFXImage(simage_wrapper.snapshot(null, null), null);
                 //image2 = SwingFXUtils.toFXImage(bImage, null);
                 ImageIO.write(bImage, "png", tempfile);
+
+                Files.delete(tempfile.toPath());
+                //tempfile.delete();
+                Main.showMessage("Submission Failed", "", "/close.png");
+
+                //BufferedImage bImage = SwingFXUtils.fromFXImage(simage_wrapper.snapshot(null, null), null);
+                //image2 = SwingFXUtils.toFXImage(bImage, null);
+                //ImageIO.write(bImage, "png", tempfile);
             }
         } catch (Exception ex) {
             ex.printStackTrace();
