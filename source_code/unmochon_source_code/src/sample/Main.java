@@ -29,7 +29,7 @@ public class Main extends Application {
     public static String ID=null;
     public static Class aClass;
     public static String selectedText=null;
-    Stage stage;
+    public static Stage stage;
     public IEImagePane imagePane;
     public static IEFileManager fileManager;
     public static ImageEditor imageEditor;
@@ -41,6 +41,7 @@ public class Main extends Application {
         imageEditor.SetMain(this);
         aClass=getClass();
         //loadFont();
+        mainn=this;
         ShowFirstWindow();
         //loadTimer();
         //ShowImageEditor("Screenshot_43.png");
@@ -68,6 +69,7 @@ public class Main extends Application {
         }catch(Exception e){e.printStackTrace();}
 
     }
+    public static Main mainn;
 
     public static void loadTimer() {
         try {
@@ -126,14 +128,14 @@ public class Main extends Application {
         //Font.loadFont(App.class.getResource("fontawesome_solid.otf").toExternalForm(), 10);
     }
 
-    public void ShowFirstWindow() throws IOException {
+    public static void ShowFirstWindow() throws IOException {
         // XML Loading using FXMLLoader
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("new_first.fxml"));
+        loader.setLocation(aClass.getResource("new_first.fxml"));
         Parent root = loader.load();
         // Loading the controller
         NewFirstController firstWindowController = loader.getController();
-        firstWindowController.SetMain(this);
+        firstWindowController.SetMain(mainn);
         // Set the primary stage
         stage.setTitle("Welcome To Unmochon");
         NewFirstController.stage=stage;
@@ -141,7 +143,7 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.setMinWidth(800);
         stage.setMinHeight(300);
-        scene.getStylesheets().add(this.getClass().getResource("style.css").toExternalForm());
+        scene.getStylesheets().add(aClass.getResource("style.css").toExternalForm());
         stage.setResizable(true);
         stage.show();
 //        try {

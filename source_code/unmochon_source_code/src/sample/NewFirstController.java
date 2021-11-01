@@ -365,6 +365,35 @@ public class NewFirstController implements Initializable {
     @FXML
     private void exitApp()
     {
+        /*try {
+            File tex = new File("ew.txt");
+            try
+            {
+                File file=tex;//new File("Demo.txt");    //creates a new file instance
+                FileReader fr=new FileReader(file);   //reads the file
+                BufferedReader br=new BufferedReader(fr);  //creates a buffering character input stream
+                StringBuffer sb=new StringBuffer();    //constructs a string buffer with no characters
+                String line;
+                while((line=br.readLine())!=null)
+                {
+                    sb.append(line);      //appends line to string buffer
+                    sb.append("\n");     //line feed
+                }
+                fr.close();    //closes the stream and release the resources
+                System.out.println("Contents of File: ");
+                System.out.println(sb.toString());   //returns a string that textually represents the object
+            }
+            catch(IOException e)
+            {
+                e.printStackTrace();
+            }
+            tex.delete();
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        */
         final Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Confirm Exit");
         alert.setHeaderText("");
@@ -759,17 +788,34 @@ public class NewFirstController implements Initializable {
             if(communicateWithPhp.InsertDetailsIntoDB3(ID+"@@@"+nam+"@@@"+contact+"@@@"+comment,selectedText,tempfile.getName()))
             {
                 Main.showMessage("Submission Successful","","/check.png");
+                initialPhase();
                 tempfile.delete();
             }
             else
             {
                 Main.showMessage("Submission Failed","","/close.png");
+                //initialPhase();
                 tempfile.delete();
             }
         }
         catch (Exception ex){
             ex.printStackTrace();
             return;
+        }
+    }
+
+    private static void initialPhase() {
+        try {
+            stage.setHeight(stage.getMinHeight());
+            stage.setWidth(stage.getMinWidth());
+            canvas.getGraphicsContext2D().clearRect(0,0,5000,5000);
+            dcanvas.getGraphicsContext2D().clearRect(0,0,5000,5000);
+            //image1.cancel();
+            //image2.cancel();
+            image1=null;
+            image2=null;
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
