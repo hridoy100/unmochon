@@ -103,6 +103,8 @@ public class NewFirstController implements Initializable {
     AnchorPane image_wrapper;
     @FXML
     Canvas can, drawingcanvas;
+    public static Button sbi3,sbi4;
+    public static MenuButton sbi2;
     String turl = "https://www.youtube.com/watch?v=HGHu-SzL-5E&list=LL&index=2";
 
     public static String getDefaultBrowser() {
@@ -159,6 +161,27 @@ public class NewFirstController implements Initializable {
         }*/
     }
 
+    private static void initialPhase() {
+        try {
+            stage.setHeight(stage.getMinHeight());
+            stage.setWidth(stage.getMinWidth());
+            canvas.getGraphicsContext2D().clearRect(0,0,5000,5000);
+            dcanvas.getGraphicsContext2D().clearRect(0,0,5000,5000);
+            //image1.cancel();
+            //image2.cancel();
+            editColor=null;
+            sbi2.setDisable(true);
+            sbi4.setDisable(true);
+            sbi3.setDisable(true);
+
+            image1=null;
+            image2=null;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
     public static void uploadToServer(String n, String con, String com) {
         nam = n;
         contact = con;
@@ -167,18 +190,41 @@ public class NewFirstController implements Initializable {
         try {
             //Main.showMessage("Image saved successfully","","icons/check.png");
             if (communicateWithPhp.InsertDetailsIntoDB3(ID, nam, contact, comment, selectedText, tempfile.getName())) {
-                if (tempfile.delete()) {
-                    System.out.println("Deleted the file: " + tempfile.getName());
-                    System.out.println("absolute path: " + tempfile.getAbsolutePath());
-                } else {
-                    System.out.println("Failed to delete the file: " + tempfile.getName());
-                    System.out.println("absolute path: " + tempfile.getAbsolutePath());
-                }
+                /*Platform.runLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        File f=new File(tempfile.getName());
+                        initialPhase();
+                        try {
+                            if (f.delete()) {
+                                //Main.showMessage("delete korse", "", "./check.png");
+                                System.out.println("Deleted the file: " + tempfile.getName());
+                                System.out.println("absolute path: " + tempfile.getAbsolutePath());
+                            } else {
+                                System.out.println("Failed to delete the file: " + tempfile.getName());
+                                System.out.println("absolute path: " + tempfile.getAbsolutePath());
+                            }
+                        }catch (Exception e)
+                        {
+                            e.printStackTrace();
+                            //Main.showMessage(e.toString(), "", "./check.png");
+                        }
+
+                    }
+                });*/
+                initialPhase();
+                BufferedImage bImage = SwingFXUtils.fromFXImage(simage_wrapper.snapshot(null, null), null);
+                //image2 = SwingFXUtils.toFXImage(bImage, null);
+                ImageIO.write(bImage, "png", tempfile);
 
                 Main.showMessage("Submission Successful", "", "/check.png");
             } else {
+                initialPhase();
                 Main.showMessage("Submission Failed", "", "/close.png");
-                tempfile.delete();
+                //tempfile.delete();
+                BufferedImage bImage = SwingFXUtils.fromFXImage(simage_wrapper.snapshot(null, null), null);
+                //image2 = SwingFXUtils.toFXImage(bImage, null);
+                ImageIO.write(bImage, "png", tempfile);
             }
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -223,7 +269,9 @@ public class NewFirstController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         canvas = can;
         dcanvas = drawingcanvas;
-
+        sbi2=bi2;
+        sbi3=bi3;
+        sbi4=bi4;
         final IEToolManager toolManager = new IEToolManager();
         NewDrawings.createNewCanvas(container.getImage(), toolManager);
         FullScreenCapture.container = this.container;
@@ -401,7 +449,22 @@ public class NewFirstController implements Initializable {
                             stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
                                 @Override
                                 public void handle(WindowEvent event) {
-                                    System.exit(0);
+                                    try {
+                                        if (tempfile != null && simage_wrapper != null) {
+                                            initialPhase();
+                                            BufferedImage bImage = SwingFXUtils.fromFXImage(simage_wrapper.snapshot(null, null), null);
+                                            //image2 = SwingFXUtils.toFXImage(bImage, null);
+                                            try {
+                                                ImageIO.write(bImage, "png", tempfile);
+                                            } catch (IOException e) {
+                                                e.printStackTrace();
+                                            }
+                                        }
+                                        System.exit(0);
+                                    }catch (Exception e)
+                                    {
+                                        e.printStackTrace();
+                                    }
                                 }
                             });
                         }
