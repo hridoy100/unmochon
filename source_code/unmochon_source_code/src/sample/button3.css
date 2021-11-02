@@ -1,0 +1,85 @@
+#output {
+
+  -fx-focus-color: transparent;
+  -fx-text-box-border: transparent;
+  -fx-text-alignment: left;
+  -fx-font-size:17;
+  -fx-background-color:#f0f0f0;
+  -fx-control-inner-background:#f0f0f0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    border: none;
+        overflow: auto;
+        outline: none;
+
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+
+        resize: none;
+}
+
+#output .content {
+    -fx-background-color:-fx-control-inner-background;
+    -fx-focus-color: transparent;
+     -fx-text-box-border: transparent;
+}
+#output:focused .content {
+    -fx-background-color:-fx-control-inner-background;
+
+}
+
+#output:focused {
+    -fx-background-color: linear-gradient(to bottom, derive(-fx-text-box-border, -10%), -fx-text-box-border), -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 3, 2;
+}
+
+
+#output *.text{
+  -fx-text-alignment: left;
+  -fx-font-size:17;
+}
+
+#head {
+  -fx-font-weight:normal;
+  -fx-focus-color: transparent;
+  -fx-text-box-border: transparent;
+  -fx-text-alignment: center;
+  -fx-font-size:35;
+  -fx-background-color:#f0f0f0;
+  -fx-control-inner-background:#f0f0f0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    border: none;
+        overflow: auto;
+        outline: none;
+
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+
+        resize: none;
+}
+
+#head .content {
+    -fx-background-color:-fx-control-inner-background;
+    -fx-focus-color: transparent;
+     -fx-text-box-border: transparent;
+}
+#head:focused .content {
+    -fx-background-color:-fx-control-inner-background;
+
+}
+
+#head:focused {
+    -fx-background-color: linear-gradient(to bottom, derive(-fx-text-box-border, -10%), -fx-text-box-border), -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 3, 2;
+}
+
+
+#head *.text{
+  -fx-text-alignment: center;
+  -fx-font-size:35;
+}

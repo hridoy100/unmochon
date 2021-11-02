@@ -207,23 +207,45 @@ public class NewFirstController implements Initializable {
 
                     }
                 });*/
-                initialPhase();
-                BufferedImage bImage = SwingFXUtils.fromFXImage(simage_wrapper.snapshot(null, null), null);
-                //image2 = SwingFXUtils.toFXImage(bImage, null);
-                ImageIO.write(bImage, "png", tempfile);
+                Platform.runLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        Main.showMessage("Submission Successful", "", "/check.png");
+                        initialPhase();
 
-                Files.delete(tempfile.toPath());
-                Main.showMessage("Submission Successful", "", "/check.png");
+                        try {
+                            BufferedImage bImage = SwingFXUtils.fromFXImage(simage_wrapper.snapshot(null, null), null);
+                            //image2 = SwingFXUtils.toFXImage(bImage, null);
+                            ImageIO.write(bImage, "png", tempfile);
+
+                            Files.delete(tempfile.toPath());
+                        }catch (Exception e)
+                        {
+                            showMessage(""+e,"","/close.png");
+                        }
+                    }
+                });
             } else {
                 //initialPhase();
+                Platform.runLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        try{
+                            Main.showMessage("Submission Failed", "", "/close.png");
 
-                BufferedImage bImage = SwingFXUtils.fromFXImage(simage_wrapper.snapshot(null, null), null);
-                //image2 = SwingFXUtils.toFXImage(bImage, null);
-                ImageIO.write(bImage, "png", tempfile);
+                            BufferedImage bImage = SwingFXUtils.fromFXImage(simage_wrapper.snapshot(null, null), null);
+                            //image2 = SwingFXUtils.toFXImage(bImage, null);
+                            ImageIO.write(bImage, "png", tempfile);
 
-                Files.delete(tempfile.toPath());
+                            Files.delete(tempfile.toPath());
+                        }catch (Exception e)
+                        {
+                            showMessage(e.getMessage(),"","/close.png");
+                        }
+                    }
+                });
+
                 //tempfile.delete();
-                Main.showMessage("Submission Failed", "", "/close.png");
 
                 //BufferedImage bImage = SwingFXUtils.fromFXImage(simage_wrapper.snapshot(null, null), null);
                 //image2 = SwingFXUtils.toFXImage(bImage, null);
@@ -682,27 +704,29 @@ public class NewFirstController implements Initializable {
     @FXML
     private void about() {
         try {
-            if (About.stage != null) {
+            if (About2.stage != null) {
                 try {
-                    About.stage.close();
-                    About.stage = null;
+                    About2.stage.close();
+                    About2.stage = null;
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("about_us.fxml"));
+            loader.setLocation(getClass().getResource("about_us2.fxml"));
             Parent root = loader.load();
             // Loading the controller
-            About firstWindowController = loader.getController();
+            About2 firstWindowController = loader.getController();
             // Set the primary stage
             Stage stage = new Stage();
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.setResizable(true);
             stage.setTitle("About Us");
-            stage.setMinHeight(400);
-            stage.setMinWidth(550);
+            stage.setMinHeight(500);
+            stage.setHeight(555);
+            stage.setMinWidth(800);
+            stage.setWidth(1010);
             stage.show();
             About.stage = stage;
             //firstWindowController.stage = stage;
@@ -858,6 +882,8 @@ public class NewFirstController implements Initializable {
     }
 
     private boolean isBrowserRunning() {
+        if(getOSType().equals("linux"))
+                return true;
         try {
             String line;
             Process p = Runtime.getRuntime().exec
@@ -1027,20 +1053,29 @@ public class NewFirstController implements Initializable {
         try {
             FXMLLoader loader = new FXMLLoader();
             //loader.setLocation(getClass().getResource("confirmdialouge.fxml"));
-            loader.setLocation(getClass().getResource("hintslatest.fxml"));
+            loader.setLocation(getClass().getResource("hintslatest2.fxml"));
             Parent root = loader.load();
             // Loading the controller
-            HintsLatest hintsController = loader.getController();
+            HintsLatest2 hintsController = loader.getController();
             //ConfirmDialouge hintsController = loader.getController();
             //firstWindowController.SetMain(main);
             // Set the primary stage
             Stage stage = new Stage();
             stage.setTitle("Tips to use Unmochon");
-            stage.setMinHeight(510);
-            stage.setMinWidth(680);
+
+            GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+            final double width = gd.getDisplayMode().getWidth();
+            final double height = gd.getDisplayMode().getHeight();
+
+
+            //stage.setMinHeight(510);
+            //stage.setMinWidth(680);
+            stage.setWidth(width*0.6);
+            stage.setHeight(height*0.8);
+
             Scene scene = new Scene(root);
             stage.setScene(scene);
-            stage.setResizable(true);
+            stage.setResizable(false);
             //stage.setOpacity(0.0f);
             stage.show();
             hintsController.stage = stage;

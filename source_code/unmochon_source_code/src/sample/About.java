@@ -27,7 +27,17 @@ public class About implements Initializable {
                 "and secure choice for large enterprises, small businesses, and "+"\n" +
                 "individuals alike. Founded in 2011, Zoom is publicly traded (NASDAQ:ZM)"+"\n" +
                 " and headquartered in San Jose, California.");
-        output.getStylesheets().add(getClass().getResource("button2.css").toExternalForm());
+
+        output.setText("Bangladeshi women are often harassed over their Facebook Messenger. There is a \n" +
+                "high prevalence of such harassment among Bangladeshi Facebook users and that \n" +
+                "often limits female users’ use of the Internet, and even causes various negative \n" +
+                "social and psychological impacts on them. \n\n" +
+                "Unmochon - a digital platform that will allow Bangladeshi women \n" +
+                "\t•\tTo anonymously post authentic screenshots of an offensive conversation,\n" +
+                "\t•\t To involve the local community members in judgment, \n" +
+                "\t•\tTo fight online harassment through public shaming of and boycotting the offenders.\n\n" +
+                "Project Unmochon is funded by Information and Communication Technology \nDivision (ICTD), Bangladesh.");
+        output.getStylesheets().add(getClass().getResource("button3.css").toExternalForm());
         root.getStylesheets().add(getClass().getResource("text.css").toExternalForm());
         output.setFocusTraversable(false);
         //text.setMouseTransparent(true);

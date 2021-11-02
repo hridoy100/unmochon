@@ -48,7 +48,7 @@ public class UserInputNext2 implements Initializable {
             UserInput.stage=null;
             ok.getStylesheets().add(getClass().getResource("button.css").toExternalForm());
             cancel.getStylesheets().add(getClass().getResource("button.css").toExternalForm());
-            output.setText("\nName:" + name + "\nPhone/Mail:" + contact + "\n\nComment:\n" + comment);
+            output.setText("Name: " + name + "\nPhone/Mail: " + contact + "\nComment:\n" + comment);
             //System.out.println();
             root.getStylesheets().add(getClass().getResource("button.css").toExternalForm());
 
@@ -200,7 +200,7 @@ public class UserInputNext2 implements Initializable {
         {
             e.printStackTrace();
         }
-        output.getStylesheets().add(getClass().getResource("button.css").toExternalForm());
+        output.getStylesheets().add(getClass().getResource("button3.css").toExternalForm());
         //raf.getStylesheets().add(getClass().getResource("button.css").toExternalForm());
         //commentt.getStylesheets().add(getClass().getResource("text.css").toExternalForm());
         //contactt.getStylesheets().add(getClass().getResource("text.css").toExternalForm());

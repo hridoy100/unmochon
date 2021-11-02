@@ -47,7 +47,6 @@ public class Main extends Application {
     }
 
     private void raf() {
-
         try{
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("user_input.fxml"));
