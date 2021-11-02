@@ -1,12 +1,6 @@
 package sample;
 
 import DB.CommunicateWithPhp;
-import com.restfb.BinaryAttachment;
-import com.restfb.DefaultFacebookClient;
-import com.restfb.FacebookClient;
-import com.restfb.Parameter;
-import com.restfb.types.FacebookType;
-import com.restfb.types.Page;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
