@@ -15,23 +15,23 @@
 
 <AnchorPane fx:id="root" minHeight="500.0" minWidth="600.0" prefHeight="734.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HintsLatest2">
    <children>
-      <VBox alignment="CENTER" prefHeight="734.0" prefWidth="985.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox alignment="CENTER" minHeight="734.0" prefHeight="734.0" prefWidth="985.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <TextArea fx:id="head" prefHeight="90.0" prefWidth="663.0">
+            <TextArea fx:id="head" minHeight="70.0" prefHeight="70.0" prefWidth="663.0" VBox.vgrow="ALWAYS">
                <VBox.margin>
-                  <Insets bottom="5.0" />
+                  <Insets top="35.0" />
                </VBox.margin>
             </TextArea>
-            <TextArea fx:id="output" editable="false" prefHeight="258.0" prefWidth="663.0">
+            <TextArea fx:id="output" editable="false" maxHeight="128.0" minHeight="128.0" prefHeight="128.0" prefWidth="663.0" VBox.vgrow="ALWAYS">
                <VBox.margin>
                   <Insets />
                </VBox.margin>
                <padding>
-                  <Insets bottom="5.0" left="30.0" top="5.0" />
+                  <Insets bottom="1.0" left="30.0" top="1.0" />
                </padding></TextArea>
-            <AnchorPane fx:id="nimage" prefHeight="308.0" prefWidth="663.0">
+            <AnchorPane fx:id="nimage" prefHeight="308.0" prefWidth="663.0" VBox.vgrow="ALWAYS">
                <VBox.margin>
-                  <Insets left="30.0" />
+                  <Insets bottom="10.0" left="30.0" />
                </VBox.margin>
                <children>
                   <Canvas fx:id="canvas" height="200.0" width="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
@@ -40,7 +40,7 @@
                   <Insets bottom="5.0" />
                </padding>
             </AnchorPane>
-            <AnchorPane minHeight="51.0" prefHeight="71.0" prefWidth="685">
+            <AnchorPane minHeight="91.0" prefHeight="71.0" prefWidth="685">
                <children>
                   <Button fx:id="ok" layoutX="462.0" layoutY="11.0" mnemonicParsing="false" onAction="#closeAction" prefHeight="31.0" prefWidth="107.0" text="Finish" AnchorPane.rightAnchor="114.0" AnchorPane.topAnchor="20.0" />
                   <Button fx:id="cancel" layoutX="112.0" mnemonicParsing="false" onAction="#previousAction" prefHeight="31.0" prefWidth="107.0" text="Next" AnchorPane.leftAnchor="112.0" AnchorPane.topAnchor="20.0" />

@@ -153,9 +153,11 @@ public class HintsLatest2 implements Initializable {
             //System.out.println(ratio);
             //wrapper.setImage(image);
             //wrapper.setImage(new Image(hintsDataList.get(index).iname));
-            canvas.setHeight(image.getHeight()/2.2);
-            canvas.setWidth(image.getWidth()/2.2);
-            canvas.getGraphicsContext2D().drawImage(image,0,0,image.getWidth()/2.2,image.getHeight()/2.2);
+            canvas.setHeight(image.getHeight()/3);
+            canvas.setWidth(image.getWidth()/3);
+            nimage.setPrefHeight(image.getHeight()/3);
+            nimage.setPrefWidth(image.getWidth()/3);
+            canvas.getGraphicsContext2D().drawImage(image,0,0,image.getWidth()/3,image.getHeight()/3);
 
             head.setText("Step: 0"+(index+1));
 

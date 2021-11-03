@@ -78,7 +78,6 @@ public class UserInput implements Initializable {
             Stage stage = new Stage();
             stage.setMinWidth(800);
             stage.setMinHeight(600);
-
             Scene scene = new Scene(root);
             stage.setTitle("Do you want to submit this?");
             stage.setScene(scene);

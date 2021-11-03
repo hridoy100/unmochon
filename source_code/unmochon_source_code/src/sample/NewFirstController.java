@@ -466,8 +466,21 @@ public class NewFirstController implements Initializable {
                             stage.maximizedProperty().addListener(new ChangeListener<Boolean>() {
                                 @Override
                                 public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                                    simage_wrapper.setScaleY(0.3 * root.getHeight() / window_height);
-                                    simage_wrapper.setScaleX(0.4 * root.getWidth() / window_width);
+                                    Thread thread1=new Thread()
+                                    {
+                                        @Override
+                                        public void run()
+                                        {
+                                            Platform.runLater(new Runnable() {
+                                                @Override
+                                                public void run() {
+                                                    simage_wrapper.setScaleY(0.3 * root.getHeight() / window_height);
+                                                    simage_wrapper.setScaleX(0.4 * root.getWidth() / window_width);
+                                                }
+                                            });
+                                        }
+                                    };
+                                    thread1.start();
                                 }
                             });
                             //stage.onCloseRequestProperty().addListener();
@@ -1070,7 +1083,7 @@ public class NewFirstController implements Initializable {
 
             //stage.setMinHeight(510);
             //stage.setMinWidth(680);
-            stage.setWidth(width*0.6);
+            stage.setWidth(width*0.7);
             stage.setHeight(height*0.8);
 
             Scene scene = new Scene(root);

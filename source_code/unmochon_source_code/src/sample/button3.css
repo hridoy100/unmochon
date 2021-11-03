@@ -3,7 +3,7 @@
   -fx-focus-color: transparent;
   -fx-text-box-border: transparent;
   -fx-text-alignment: left;
-  -fx-font-size:17;
+  -fx-font-size:16;
   -fx-background-color:#f0f0f0;
   -fx-control-inner-background:#f0f0f0;
     -fx-focus-color: transparent;
@@ -38,7 +38,7 @@
 
 #output *.text{
   -fx-text-alignment: left;
-  -fx-font-size:17;
+  -fx-font-size:16;
 }
 
 #head {
@@ -46,7 +46,7 @@
   -fx-focus-color: transparent;
   -fx-text-box-border: transparent;
   -fx-text-alignment: center;
-  -fx-font-size:35;
+  -fx-font-size:30;
   -fx-background-color:#f0f0f0;
   -fx-control-inner-background:#f0f0f0;
     -fx-focus-color: transparent;
@@ -81,5 +81,5 @@
 
 #head *.text{
   -fx-text-alignment: center;
-  -fx-font-size:35;
+  -fx-font-size:30;
 }
