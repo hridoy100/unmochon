@@ -1083,8 +1083,8 @@ public class NewFirstController implements Initializable {
 
             //stage.setMinHeight(510);
             //stage.setMinWidth(680);
-            stage.setWidth(width*0.7);
-            stage.setHeight(height*0.8);
+            stage.setWidth(width*0.67);
+            stage.setHeight(height*0.9);
 
             Scene scene = new Scene(root);
             stage.setScene(scene);

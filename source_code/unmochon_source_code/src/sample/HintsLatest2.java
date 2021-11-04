@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -26,7 +27,9 @@ public class HintsLatest2 implements Initializable {
     @FXML
     Button ok,cancel;
     @FXML
-    TextArea output,head;
+    TextArea output;
+    @FXML
+    Label head;
     @FXML
     AnchorPane root;
     @FXML
@@ -81,8 +84,8 @@ public class HintsLatest2 implements Initializable {
         head.getStylesheets().add(getClass().getResource("button3.css").toExternalForm());
         head.setFocusTraversable(false);
         output.setFocusTraversable(false);
-        head.setEditable(false);
-        head.setMouseTransparent(true);
+        //head.setEditable(false);
+        //head.setMouseTransparent(true);
     }
 
 
@@ -153,11 +156,11 @@ public class HintsLatest2 implements Initializable {
             //System.out.println(ratio);
             //wrapper.setImage(image);
             //wrapper.setImage(new Image(hintsDataList.get(index).iname));
-            canvas.setHeight(image.getHeight()/3);
-            canvas.setWidth(image.getWidth()/3);
-            nimage.setPrefHeight(image.getHeight()/3);
-            nimage.setPrefWidth(image.getWidth()/3);
-            canvas.getGraphicsContext2D().drawImage(image,0,0,image.getWidth()/3,image.getHeight()/3);
+            canvas.setHeight(image.getHeight()/2.00);
+            canvas.setWidth(image.getWidth()/2.00);
+            nimage.setPrefHeight(image.getHeight()/2.00);
+            nimage.setPrefWidth(image.getWidth()/2.00);
+            canvas.getGraphicsContext2D().drawImage(image,0,0,image.getWidth()/2.00,image.getHeight()/2.00);
 
             head.setText("Step: 0"+(index+1));
 
