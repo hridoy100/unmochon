@@ -48,3 +48,10 @@ Route::post('/page', [GraphController::class, 'publishToPage']);
 
 Route::post('/upload_pic/{userid}', [UnmochonJavaController::class, 'uploadPic']);
 Route::post('/upload_details', [UnmochonJavaController::class, 'uploadDetails']);
+Route::get('/victim-support', function (){
+    return view('support');
+});
+
+Route::get('/team', function (){
+    return view('team');
+});

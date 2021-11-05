@@ -20,7 +20,7 @@ The above copyright notice and this permission notice shall be included in all c
     <link rel="icon" type="image/png" href="{{asset('img/favicon.png')}}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        ‘Unmochon’: A Tool to Combat Online Sexual Harassment
+        Unmochon
     </title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
@@ -64,7 +64,7 @@ The above copyright notice and this permission notice shall be included in all c
         <div class="navbar-translate">
             <a class="navbar-brand" href="/" style="font-size: larger">
 {{--                <img src="{{asset('img/shomonnoi-logo.png')}}" alt="" height="35px">--}}
-                ‘Unmochon’: A Tool to Combat Online Sexual Harassment
+                Unmochon
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="sr-only">Toggle navigation</span>
@@ -77,29 +77,39 @@ The above copyright notice and this permission notice shall be included in all c
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="/" onclick="scrollToDownload()">
-                        <i class="material-icons">home</i> Home
+                        <div style="display: flex; align-items: center">
+                            <img class="ml--1 pl-0 mr-2" src="{{asset('assets/img/home.png')}}" alt="" style="width: 20px; background-position: left"> Home
+                        </div>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="/db" class="nav-link">
-                        <i class="material-icons">event</i> Database
+                        <div style="display: flex; align-items: center">
+                            <img class="ml--1 pl-0 mr-2" src="{{asset('assets/img/database.png')}}" alt="" style="width: 20px; background-position: left"> Database
+                        </div>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="/victim-support" class="nav-link">
-                        <i class="material-icons">bubble_chart</i> Victim Support
+                        <div style="display: flex; align-items: center">
+                            <img class="ml--1 pl-0 mr-2" src="{{asset('assets/img/support.png')}}" alt="" style="width: 20px; background-position: left"> Victim Support
+                        </div>
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a href="/contact" class="nav-link">
-                        <i class="material-icons">description</i> Contact
-                    </a>
-                </li>
+{{--                <li class="nav-item">--}}
+{{--                    <a href="/contact" class="nav-link">--}}
+{{--                        <div style="display: flex; align-items: center">--}}
+{{--                            <img class="ml--1 pl-0 mr-2" src="{{asset('assets/img/contact.png')}}" alt="" style="width: 20px; background-position: left"> Contact--}}
+{{--                        </div>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/about" target="_blank">
-                        <i class="material-icons">group</i> About
+                    <a class="nav-link" href="/team">
+                        <div style="display: flex; align-items: center">
+                            <img class="ml--1 pl-0 mr-2" src="{{asset('assets/img/teamwork.png')}}" alt="" style="width: 20px; background-position: left"> Unmochon Team
+                        </div>
                     </a>
                 </li>
 

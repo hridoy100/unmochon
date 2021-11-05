@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="unmochonJfx">
+    <output-path>$PROJECT_DIR$/out/artifacts/unmochonJfx</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="alias" value="" />
+        <option name="appClass" value="sample.Main" />
+        <option name="description" value="" />
+        <option name="enabledSigning" value="true" />
+        <option name="height" value="300" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="keystore" value="" />
+        <option name="nativeBundle" value="exe" />
+        <option name="title" value="unmochon" />
+        <option name="vendor" value="unmochon" />
+        <option name="version" value="1.0.0" />
+        <option name="width" value="800" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="unmochonJfx.jar">
+        <element id="module-output" name="unmochonJfx" />
+      </element>
+      <element id="extracted-dir" path="$PROJECT_DIR$/json-simple-1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/mysql-connector-java-5.1.45-bin.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/selenium-server-standalone-3.141.59.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jds-3.2.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
