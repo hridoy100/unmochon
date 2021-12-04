@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c79aa690-dd65-4701-853f-7086eb95a8ef" name="Default Changelist" comment="">
+    <list default="true" id="c79aa690-dd65-4701-853f-7086eb95a8ef" name="Default Changelist" comment=":memo: update full webview">
+      <change afterPath="$PROJECT_DIR$/public/assets/img/contact.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/database.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/ela_apu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/harassment1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/harassment2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/helping-hand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/hridoy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/letter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/shaid_hasan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/support.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/teamwork.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/teamwork_light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/download.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/support.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/team.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/tutorial.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/icons/harassment.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/icons/harassment.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UnmochonJavaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UnmochonJavaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_09_20_192520_create_user_details_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_09_20_192520_create_user_details_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/DB/CommunicateWithPhp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/DB/CommunicateWithPhp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/NewFirstController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/NewFirstController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/UserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/UserInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/UserInputNext2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/UserInputNext2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/database.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/database.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +39,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="apurba" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="KubernetesApiPersistence">
@@ -150,7 +173,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -162,6 +185,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\REVESoft\Unmochon\frontend\unmochon\resources\views" />
       <recent name="D:\Others\unmochon\public\assets\img" />
       <recent name="D:\Others\unmochon\public" />
       <recent name="D:\Others\unmochon\resources\views" />
@@ -192,6 +216,15 @@
       <workItem from="1632327972618" duration="13239000" />
       <workItem from="1632505180024" duration="8416000" />
       <workItem from="1635704841215" duration="1808000" />
+      <workItem from="1635865027581" duration="13645000" />
+      <workItem from="1636385354427" duration="1198000" />
+      <workItem from="1636469937580" duration="13051000" />
+      <workItem from="1637138636382" duration="9000" />
+      <workItem from="1637599800538" duration="4689000" />
+      <workItem from="1637982276757" duration="38000" />
+      <workItem from="1638386282934" duration="775000" />
+      <workItem from="1638426825864" duration="16000" />
+      <workItem from="1638644927844" duration="343000" />
     </task>
     <servers />
   </component>
@@ -208,5 +241,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
