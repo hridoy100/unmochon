@@ -55,3 +55,11 @@ Route::get('/victim-support', function (){
 Route::get('/team', function (){
     return view('team');
 });
+
+Route::get('/tutorial', function () {
+    return view('tutorial');
+});
+
+Route::get('/download', function () {
+    return view('download');
+});

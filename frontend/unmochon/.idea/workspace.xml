@@ -2,30 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c79aa690-dd65-4701-853f-7086eb95a8ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/download.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/tutorial.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/.idea/shelf/Uncommitted_changes_before_Update_at_01-Nov-21_11_38_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/.idea/shelf/Uncommitted_changes_before_Update_at_01-Nov-21_11_38_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/about.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/about.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/cssFiles/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/cssFiles/demo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/encryption/document.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/encryption/document.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/encryption/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/encryption/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/about_us.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/about_us.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/button2.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/button2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/confirmdialouge.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/confirmdialouge.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/dialogue.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/dialogue.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/firstWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/firstWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/hintslatest.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/hintslatest.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/imageShow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/imageShow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/loginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/loginPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/new_first.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/new_first.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/screenshotTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/screenshotTable.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/text.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/text.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/timer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/timer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/timer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/userTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/userTable.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/user_input.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/sample/user_input.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/database.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/database.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/support.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/support.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/team.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/team.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +196,13 @@
       <workItem from="1635704841215" duration="1808000" />
       <workItem from="1635865027581" duration="13645000" />
       <workItem from="1636385354427" duration="1198000" />
-      <workItem from="1636469937580" duration="843000" />
+      <workItem from="1636469937580" duration="13051000" />
+      <workItem from="1637138636382" duration="9000" />
+      <workItem from="1637599800538" duration="4689000" />
+      <workItem from="1637982276757" duration="38000" />
+      <workItem from="1638386282934" duration="775000" />
+      <workItem from="1638426825864" duration="16000" />
+      <workItem from="1638644927844" duration="343000" />
     </task>
     <servers />
   </component>
