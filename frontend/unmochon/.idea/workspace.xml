@@ -1,33 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c79aa690-dd65-4701-853f-7086eb95a8ef" name="Default Changelist" comment=":memo: update full webview">
-      <change afterPath="$PROJECT_DIR$/public/assets/img/contact.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/database.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/ela_apu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/harassment1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/harassment2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/helping-hand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/hridoy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/letter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/man.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/shaid_hasan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/support.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/teamwork.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/teamwork_light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/download.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/support.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/team.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/tutorial.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/icons/harassment.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/icons/harassment.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/database.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/database.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    <list default="true" id="c79aa690-dd65-4701-853f-7086eb95a8ef" name="Default Changelist" comment=":bookmark: autologout add">
+      <change afterPath="$PROJECT_DIR$/resources/js/components/AutoLogout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
