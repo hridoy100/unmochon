@@ -16,6 +16,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.net.URL;
@@ -48,7 +49,7 @@ public class UserInputNext2 implements Initializable {
             UserInput.stage=null;
             ok.getStylesheets().add(getClass().getResource("button.css").toExternalForm());
             cancel.getStylesheets().add(getClass().getResource("button.css").toExternalForm());
-            output.setText("\nName:" + name + "\nPhone/Mail:" + contact + "\n\nComment:\n" + comment);
+            output.setText("Name: " + name + "\nPhone/Mail: " + contact + "\nComment:\n" + comment);
             //System.out.println();
             root.getStylesheets().add(getClass().getResource("button.css").toExternalForm());
 
@@ -117,57 +118,68 @@ public class UserInputNext2 implements Initializable {
                                         wrapper.setFitHeight(valueh);
                                     }
                                 });
-/*
+
                                 stage.maximizedProperty().addListener(new ChangeListener<Boolean>() {
                                     @Override
                                     public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                                        output.setText("maximuzed calleed");
-                                        if(stage.isMaximized()) {
-                                            GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
-                                            final double width = gd.getDisplayMode().getWidth();
-                                            final double height = gd.getDisplayMode().getHeight();
-                                            output.setText(width+"maximuzed calleed"+height);
-                                            double tempratio=width/height;
-                                            double valuew,valueh;
-                                            if(tempratio<ratio)
-                                            {
-                                                valuew=stage.getWidth()/1.8;
-                                                valueh=valuew/ratio;
-                                            }
-                                            else
-                                            {
-                                                valueh=stage.getHeight()/1.8;
-                                                valuew=valueh*ratio;
-                                            }
-                                            wrapper.setFitWidth(valuew);
-                                            wrapper.setFitHeight(valueh);
+                                        //output.setText("maximuzed calleed");
+                                        Thread runnable=new Thread() {
+                                            @Override
+                                            public void run() {
+                                                Platform.runLater(new Runnable() {
+                                                    @Override
+                                                    public void run() {
+                                                        if(stage.isMaximized()) {
+                                                            GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+                                                            final double width = gd.getDisplayMode().getWidth();
+                                                            final double height = gd.getDisplayMode().getHeight();
+                                                            //output.setText(width+"maximuzed calleed"+height);
+                                                            double tempratio=width/height;
+                                                            double valuew,valueh;
+                                                            if(tempratio<ratio)
+                                                            {
+                                                                valuew=stage.getWidth()/1.8;
+                                                                valueh=valuew/ratio;
+                                                            }
+                                                            else
+                                                            {
+                                                                valueh=stage.getHeight()/1.8;
+                                                                valuew=valueh*ratio;
+                                                            }
+                                                            wrapper.setFitWidth(valuew);
+                                                            wrapper.setFitHeight(valueh);
 
-                                        }
-                                        else
-                                        {
-                                            output.setText("maximuzed calleed");
-                                            GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
-                                            final double width = stage.getWidth();//gd.getDisplayMode().getWidth();
-                                            final double height = stage.getHeight();//gd.getDisplayMode().getHeight();
+                                                        }
+                                                        else
+                                                        {
+                                                            //output.setText("maximuzed calleed");
+                                                            GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+                                                            final double width = stage.getWidth();//gd.getDisplayMode().getWidth();
+                                                            final double height = stage.getHeight();//gd.getDisplayMode().getHeight();
 
-                                            double tempratio=width/height;
-                                            double valuew,valueh;
-                                            if(tempratio<ratio)
-                                            {
-                                                valuew=stage.getWidth()/1.8;
-                                                valueh=valuew/ratio;
+                                                            double tempratio=width/height;
+                                                            double valuew,valueh;
+                                                            if(tempratio<ratio)
+                                                            {
+                                                                valuew=stage.getWidth()/1.8;
+                                                                valueh=valuew/ratio;
+                                                            }
+                                                            else
+                                                            {
+                                                                valueh=stage.getHeight()/1.8;
+                                                                valuew=valueh*ratio;
+                                                            }
+                                                            wrapper.setFitWidth(valuew);
+                                                            wrapper.setFitHeight(valueh);
+                                                        }
+                                                    }
+                                                });
                                             }
-                                            else
-                                            {
-                                                valueh=stage.getHeight()/1.8;
-                                                valuew=valueh*ratio;
-                                            }
-                                            wrapper.setFitWidth(valuew);
-                                            wrapper.setFitHeight(valueh);
-                                        }
+                                        };
+                                        runnable.start();
                                     }
                                 });
-*/
+/*
                                 stage.maximizedProperty().addListener(new ChangeListener<Boolean>() {
                                     @Override
                                     public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
@@ -186,7 +198,7 @@ public class UserInputNext2 implements Initializable {
                                         wrapper.setFitWidth(valuew);
                                         wrapper.setFitHeight(valueh);
                                     }
-                                });
+                                });*/
                             }
                         });
                     } catch (Exception e) {
@@ -200,7 +212,7 @@ public class UserInputNext2 implements Initializable {
         {
             e.printStackTrace();
         }
-        output.getStylesheets().add(getClass().getResource("button.css").toExternalForm());
+        output.getStylesheets().add(getClass().getResource("button3.css").toExternalForm());
         //raf.getStylesheets().add(getClass().getResource("button.css").toExternalForm());
         //commentt.getStylesheets().add(getClass().getResource("text.css").toExternalForm());
         //contactt.getStylesheets().add(getClass().getResource("text.css").toExternalForm());

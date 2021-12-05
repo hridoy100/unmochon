@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.sun.javafx.scene.control.skin.WebColorField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane fx:id="root" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HintsController">
+   <children>
+       <VBox prefHeight="650.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+              <TextArea fx:id="text" prefHeight="150" prefWidth="900">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </VBox.margin></TextArea>
+            <AnchorPane>
+               <children>
+                    <HBox alignment="CENTER" prefHeight="191.0" prefWidth="900" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                       <children>
+                          <Button fx:id="previous" layoutX="180.0" onAction="#previousAction" prefHeight="40" prefWidth="100" text="Next">
+                           <HBox.margin>
+                              <Insets left="120.0" right="40.0" />
+                           </HBox.margin>
+                          </Button>
+                          <Button fx:id="next" layoutX="495" onAction="#nextAction" prefHeight="50" prefWidth="90" text="Next">
+                           <HBox.margin>
+                              <Insets left="40.0" right="40.0" />
+                           </HBox.margin>
+                          </Button>
+                          <Button fx:id="close" layoutX="470" onAction="#closeAction" prefHeight="40" prefWidth="90" style="{-fx-background-color:#221212;-fx-background-radius: 5,5,5,5;}" text="Finish">
+                           <HBox.margin>
+                              <Insets left="40.0" right="120.0" />
+                           </HBox.margin>
+                          </Button>
+                       </children>
+                    </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </AnchorPane>
+          </children>
+       </VBox>
+      <AnchorPane fx:id="outw" prefHeight="500.0" prefWidth="800.0" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-0.0" AnchorPane.topAnchor="0.0">
+         <children>
+              <ImageView fx:id="imagew" fitHeight="25.0" fitWidth="52.0" AnchorPane.bottomAnchor="1175.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1148.0" AnchorPane.topAnchor="0.0">
+              </ImageView>
+            <StackPane fx:id="imageWrapper" prefHeight="127.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Canvas fx:id="canvas" height="1200.0" width="1200.0">
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                  </Canvas>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
