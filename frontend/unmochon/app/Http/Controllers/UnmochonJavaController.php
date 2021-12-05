@@ -55,6 +55,9 @@ class UnmochonJavaController extends Controller
         if($user==null) {
             UserDetail::create([
                 "userid" => $request->userid,
+                "victim_name" => $request->name,
+                "victim_contact" => $request->contact,
+                "victim_comment" => $request->comment,
                 "userlink" => $request->userlink
             ]);
         }

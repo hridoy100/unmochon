@@ -1,0 +1,1 @@
+1.scene builder e vgrow/hgrow egula sobsomoy 'always' debo,inherit ta faltu

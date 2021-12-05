@@ -135,11 +135,14 @@ public class HttpPost {
             outputStream.close();
             inputStream.close();
 
-            if(output.contains("success"))
+            if(output.contains("success")) {
                 return true;
+            }
 
         } catch (Exception e) {
+            System.out.println(e.getMessage());
             e.printStackTrace();
+
         } finally {
             System.out.println("Close connection");
             try {

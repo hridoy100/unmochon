@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="root" alignment="CENTER" prefHeight="100.0" prefWidth="100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Timer">
+   <children>
+           <Label fx:id="counter" alignment="CENTER" contentDisplay="CENTER" prefHeight="100" prefWidth="100" text="3" textAlignment="CENTER" textFill="blue">
+         <font>
+            <Font size="150.0" />
+         </font>
+      </Label>
+   </children>
+</StackPane>

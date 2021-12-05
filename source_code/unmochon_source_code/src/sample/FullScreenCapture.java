@@ -1,33 +1,35 @@
 package sample;
+
 import DB.CommunicateWithPhp;
-import DB.InsertIntoDB;
-import com.restfb.BinaryAttachment;
-import com.restfb.DefaultFacebookClient;
-import com.restfb.FacebookClient;
-import com.restfb.Parameter;
-import com.restfb.types.FacebookType;
-import com.restfb.types.Page;
+import javafx.application.Platform;
+import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.control.Alert;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.*;
+import javafx.stage.Stage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.awt.AWTException;
-import java.awt.FlowLayout;
-import java.awt.Rectangle;
-import java.awt.Robot;
-import java.awt.Toolkit;
+import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
+import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.sql.Timestamp;
 import java.util.Date;
-import javax.imageio.ImageIO;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import static sample.Main.fileManager;
+import static sample.Main.imageEditor;
+import static sample.NewFirstController.*;
 
 
 /**
@@ -40,14 +42,75 @@ public class FullScreenCapture {
     private Main main;
     boolean inserted;
 
+    public static ImageView container;
+
+    public static StackPane scontainer;
+
     private static final long serialVersionUID = 1L;
     //public static void main(String[] args) throws UnsupportedFlavorException {
     public boolean CaptureDetails() throws UnsupportedFlavorException {
-        inserted = false;
-        FullScreenCapture f = new FullScreenCapture();
+        inserted = true;
+        //FullScreenCapture f = new FullScreenCapture();
         try {
-            Thread.sleep(5000);
+
+            ///////Thread.sleep(300);
             Robot robot = new Robot();
+
+            robot.keyPress(KeyEvent.VK_ALT);
+            robot.keyPress(KeyEvent.VK_D);
+            Thread.sleep(500);
+            robot.keyRelease(KeyEvent.VK_D);
+            robot.keyRelease(KeyEvent.VK_ALT);
+            Thread.sleep(100);
+
+            robot.keyPress(KeyEvent.VK_CONTROL);
+            robot.keyPress(KeyEvent.VK_C);
+            Thread.sleep(500);
+            robot.keyRelease(KeyEvent.VK_C);
+            robot.keyRelease(KeyEvent.VK_CONTROL);
+            Thread.sleep(200);
+
+            robot.keyPress(KeyEvent.VK_CONTROL);
+            robot.keyPress(KeyEvent.VK_F5);
+            Thread.sleep(220);///////////////1300
+            robot.keyRelease(KeyEvent.VK_CONTROL);
+            robot.keyRelease(KeyEvent.VK_F5);
+            Platform.runLater(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        /*main.stage.toFront();
+                        //main.stage.setAlwaysOnTop(true);
+                        main.stage.setIconified(false);
+                        main.stage.show();
+                        main.stage.requestFocus();
+                        main.stage.toFront();*/
+
+                        ////////showTimer();
+                        /*Stage popUpStage=Timer.stage;
+                        popUpStage.setAlwaysOnTop(true);
+                        //popUpStage.setAlwaysOnTop(false);
+                        if (popUpStage.isIconified())
+                            popUpStage.setIconified(false);
+                        popUpStage.show();
+                        popUpStage.requestFocus();
+                        popUpStage.toFront();*/
+                    }catch (Exception e)
+                    {
+                        e.printStackTrace();
+                        inserted = false;
+                    }
+                }
+            });
+
+            String selectedText =(String)Toolkit.getDefaultToolkit().getSystemClipboard().getData(DataFlavor.stringFlavor); // it extracts the highlighted text of system clipboard
+            if(DEBUG_MODE.DEBUG_FullScreenCapture)
+                System.out.println(selectedText);
+            Main.selectedText=selectedText;
+            Main.ID = ExtractID(selectedText);
+//            selectedText=selectedText.replace("&","_");
+            Thread.sleep(5000);
+
 //            String fileName = "FullScreenshot.jpg";
             Date date= new Date();
             //getTime() returns current time in milliseconds
@@ -65,119 +128,97 @@ public class FullScreenCapture {
             Rectangle screenRect = new Rectangle(Toolkit.getDefaultToolkit()
                     .getScreenSize());
             BufferedImage screenFullImage = robot.createScreenCapture(screenRect);
+            image1= SwingFXUtils.toFXImage(screenFullImage, null );
+
+
             //ImageIO.write(screenFullImage, "jpg", new File("./src/DB/"+fileName));
-            ImageIO.write(screenFullImage, "jpg", new File(fileName));
-
-            //f.setLocation(500, 500);
-            //JLabel text = new JLabel("A full screenshot saved!");
-            //f.add(text);
-            //f.setSize(200, 100);
-            //f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            //f.getContentPane().setLayout(new FlowLayout());
-            //f.setVisible(true);
-
-            robot.keyPress(KeyEvent.VK_CONTROL);
-            robot.keyPress(KeyEvent.VK_F5);
-            Thread.sleep(3000);
-
-            robot.keyRelease(KeyEvent.VK_CONTROL);
-            robot.keyRelease(KeyEvent.VK_F5);
-
-            robot.keyPress(KeyEvent.VK_ALT);
-            robot.keyPress(KeyEvent.VK_D);
-            Thread.sleep(500);
-            robot.keyRelease(KeyEvent.VK_D);
-            robot.keyRelease(KeyEvent.VK_ALT);
-            Thread.sleep(500);
-
-            robot.keyPress(KeyEvent.VK_CONTROL);
-            robot.keyPress(KeyEvent.VK_C);
-            Thread.sleep(500);
-            robot.keyRelease(KeyEvent.VK_C);
-            robot.keyRelease(KeyEvent.VK_CONTROL);
-
-            Thread.sleep(500);
-
-            String selectedText =(String)Toolkit.getDefaultToolkit().getSystemClipboard().getData(DataFlavor.stringFlavor); // it extracts the highlighted text of system clipboard
-            if(DEBUG_MODE.DEBUG_FullScreenCapture)
-                System.out.println(selectedText);
-
-            String ID = ExtractID(selectedText);
-//            selectedText=selectedText.replace("&","_");
-            Thread.sleep(2000);
-            main.ShowImageEditor(fileName);
+            File file=new File(fileName);
+            //ImageIO.write(screenFullImage, "jpg", file);
+            //Thread.sleep(100);
+            //tempfileone=file;
+            //main.ShowImageEditor(fileName);
             //ImageEditor.main("FullScreenshot.jpg");
 
-            //Inserts into database when closed...
 
+            Platform.runLater(new Runnable() {
+                @Override
+                public void run() {
+                    main.stage.setIconified(false);
+                    main.stage.toFront();
 
-            main.stage.setOnHiding( e-> {
-                CommunicateWithPhp communicateWithPhp = new CommunicateWithPhp();
-                /*
-                final FacebookClient fb = new DefaultFacebookClient(communicateWithPhp.getToken());
+                    GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+                    final int width = gd.getDisplayMode().getWidth();
+                    final int height = gd.getDisplayMode().getHeight();
 
-                //fb.publish("324917484323515/feed", FacebookType.class, Parameter.with("message", "Rest FB test"));
-                try{
-                    final Page page = fb.fetchObject("349243719108528", Page.class);
-                    int length = selectedText.length();
-                    if(length>36) length = 36;
-//                    fb.publish("349243719108528/photos", FacebookType.class,  BinaryAttachment.with("FullScreenshot.jpg", new FileInputStream(new File("FullScreenshot.jpg"))),Parameter.with("message","www.facebook.com/"+selectedText.substring(length) ));
-                    fb.publish("349243719108528/photos", FacebookType.class,  BinaryAttachment.with(fileName, new FileInputStream(new File(fileName))),Parameter.with("message","www.facebook.com/"+selectedText.substring(length) ));
+                    main.stage.setHeight(height);
+                    main.stage.setWidth(width);
+                    main.stage.setX(0);
+                    main.stage.setY(0);
                 }
-                catch (Exception exce){
-                    exce.printStackTrace();
-                    Alert alert = new Alert(Alert.AlertType.ERROR);
-                    alert.setTitle("FACEBOOK FAILURE");
-                    alert.setHeaderText("FAILED TO POST INTO OUR FACEBOOK PAGE");
-                    alert.setContentText("Facebook error");
-                    alert.showAndWait();
-                }
-                */
-                try {
-                    if(communicateWithPhp.InsertDetailsIntoDB3(ID,selectedText,fileName))
-                    {
-                        inserted = true;
-                        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-                        alert.setTitle("SUCCESSFULLY INSERTED");
-                        alert.setHeaderText("IMAGE INSERTED INTO DATABASE");
-                        alert.setContentText("Connection Successful");
-                        alert.showAndWait();
-                    }
-                    else
-                    {
-                        inserted = false;
-                        Alert alert = new Alert(Alert.AlertType.ERROR);
-                        alert.setTitle("FAILED TO INSERT");
-                        alert.setHeaderText("FAILED TO INSERT INTO DATABASE");
-                        alert.setContentText("Connection Error");
-                        alert.showAndWait();
-                        return;
-                    }
-                }
-                catch (Exception ex){
-                    ex.printStackTrace();
-                    return;
-                }
-
-
             });
+            Thread.sleep(100);
+            try {
+                //Thread.sleep(100);
+                Platform.runLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        //stage.setFullScreen(true);
+                        //Thread.sleep(100);
+                        //stage.setFullScreen(false);
 
+                        GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+                        final int width = gd.getDisplayMode().getWidth();
+                        final int height = gd.getDisplayMode().getHeight();
 
-              /*
-            final FacebookClient fb = new DefaultFacebookClient("EAAFbJIHdvPUBAOyJPensazRimQcnxKz8fM6ZAzqmJ6VkOwFfGFtjkvcwrYo4rl0jEN2OQUh5CyNpRcZBqUQ8sBudKGT3TT4slttgLDDeHfXUOhPYAPRIQsoDOz41eJZCVxKX1PslbGh46470gtrCTsZCIlULKQOhbWhOOnjimssMwUqgZB8F7S1DWNBvSAVPfqhL4BNLYrwZDZD");
-            final Page page = fb.fetchObject("349243719108528", Page.class);
-            //fb.publish("324917484323515/feed", FacebookType.class, Parameter.with("message", "Rest FB test"));
-            fb.publish("349243719108528/photos", FacebookType.class,  BinaryAttachment.with("FullScreenshot.jpg", new FileInputStream(new File("FullScreenshot.jpg"))),Parameter.with("message","www.facebook.com/"+selectedText.substring(36) ));
-            */
+                        try {
+                            fileManager = imageEditor.initFileManager(fileName);
+                            final Image image = image1;//fileManager.loadImage(new File(fileName));
+                            canvas.setWidth(image.getWidth());
+                            canvas.setHeight(image.getHeight());
+                            dcanvas.setWidth(image.getWidth());
+                            dcanvas.setHeight(image.getHeight());
+                            canvas.getGraphicsContext2D().drawImage(image, 0, 0, image.getWidth(), image.getHeight());
+                        }catch (Exception e)
+                        {
+                            e.printStackTrace();
+                            inserted=false;
+                        }
+                        dcanvas.getGraphicsContext2D().clearRect(0,0,5000,5000);
+                        simage_wrapper.setScaleX(0.4*width/window_width);
+                        simage_wrapper.setScaleY(0.3*height/window_height);
 
-//            CommunicateWithPhp communicateWithPhp = new CommunicateWithPhp();
-//
-//            //if(insertIntoDB.InsertDetails(ID, selectedText, fileName))
-//            if(communicateWithPhp.InsertDetailsIntoDB(ID,selectedText,fileName))
-//                return true;
+                        //simage_wrapper.setScaleX(2);
+                        //simage_wrapper.setScaleY(2);
+                    }
+                });
+
+                //simage_wrapper.setPrefWidth(window_width/2);
+                //simage_wrapper.setPrefHeight(window_height/2);
+                //scontainer.setPrefWidth(window_width/2);
+                //scontainer.setPrefHeight(window_height/2);
+                //scontainer.setLayoutX(0);
+                //scontainer.setLayoutY(0);
+                //simage_wrapper.setLayoutX(0);
+                //simage_wrapper.setLayoutY(0);
+
+                //container.setImage(image);
+                //container.setScaleX(0.85);
+                //container.setScaleY(0.85);
+                //scontainer.setBackground(new Background(BackgroundC));
+                //scontainer.setBackground(new Background(new BackgroundImage(image, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, BackgroundSize.DEFAULT)));
+
+                brush_set=0;
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+                inserted=false;
+            }
+
 
         } catch (AWTException | IOException | InterruptedException ex) {
             System.err.println(ex);
+            inserted=false;
         }
         return inserted;
     }

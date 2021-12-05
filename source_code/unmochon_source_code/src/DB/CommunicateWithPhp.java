@@ -377,9 +377,7 @@ public class CommunicateWithPhp {
         return false;
     }*/
 
-    public boolean InsertDetailsIntoDB3(String ID, String link, String imgFileName) {
-
-
+    public boolean InsertDetailsIntoDB3(String ID, String name, String contact, String comment, String link, String imgFileName) {
 
         URL userDetailsUrl, imgUploadUrl;
         try {
@@ -391,6 +389,9 @@ public class CommunicateWithPhp {
 
         Map<String, String> map = new HashMap<>();
         map.put("userid", ID);
+        map.put("name", name);
+        map.put("contact", contact);
+        map.put("comment", comment);
         map.put("userlink", link);
         if(httpPost.postString(map)){
             httpPost = new HttpPost(imgUploadUrl);

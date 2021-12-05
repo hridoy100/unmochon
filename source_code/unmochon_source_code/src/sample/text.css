@@ -1,0 +1,39 @@
+#output *.text{
+  -fx-text-alignment: center;
+}
+#output {
+  -fx-text-alignment: center;
+}
+#contactt *.text{
+  -fx-text-alignment: center;
+}
+#contactt {
+  -fx-text-alignment: center;
+}
+#commentt *.text{
+  -fx-text-alignment: center;
+}
+#commentt {
+  -fx-text-alignment: center;
+}
+#text *.text{
+  -fx-text-alignment: center;
+  -fx-font-size:20;
+  -fx-highlight-fill: lightgray;
+}
+#text {
+  -fx-text-alignment: center;
+  -fx-font-size:20;
+  -fx-background-color:#f0f0f0;
+  -fx-control-inner-background:#f0f0f0;
+  -fx-highlight-fill: lightgray;
+    outline:none;
+    border:none;
+}
+#root {
+  -fx-background-color:#f0f0f0;
+  -fx-control-inner-background:#f0f0f0;
+  -fx-highlight-fill: lightgray;
+    outline:none;
+    border:none;
+}

@@ -58,8 +58,8 @@ The above copyright notice and this permission notice shall be included in all c
 
 </head>
 
-<body class="index-page sidebar-collapse bg-dark">
-<nav class="navbar navbar-transparent bg-dark navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav" style="font-weight: 600">
+<body class="index-page sidebar-collapse bg-white">
+<nav class="navbar bg-success navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav" style="font-weight: 600;">
     <div class="container">
         <div class="navbar-translate">
             <a class="navbar-brand" href="/" style="font-size: larger">
@@ -78,21 +78,28 @@ The above copyright notice and this permission notice shall be included in all c
                 <li class="nav-item">
                     <a class="nav-link" href="/" onclick="scrollToDownload()">
                         <div style="display: flex; align-items: center">
-                            <img class="ml--1 pl-0 mr-2" src="{{asset('assets/img/home.png')}}" alt="" style="width: 20px; background-position: left"> Home
+                            <img class="ml--1 pl-0 mr-2" src="{{asset('assets/img/home_normal.png')}}" alt="" style="width: 20px; background-position: left"> Home
                         </div>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="/db" class="nav-link">
                         <div style="display: flex; align-items: center">
-                            <img class="ml--1 pl-0 mr-2" src="{{asset('assets/img/database.png')}}" alt="" style="width: 20px; background-position: left"> Database
+                            <img class="ml--1 pl-0 mr-2" src="{{asset('assets/img/database_white.png')}}" alt="" style="width: 20px; background-position: left"> Database
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/download" class="nav-link">
+                        <div style="display: flex; align-items: center">
+                            <img class="ml--1 pl-0 mr-2" src="{{asset('assets/img/cloud-download.png')}}" alt="" style="width: 20px; background-position: left"> Download
                         </div>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="/victim-support" class="nav-link">
                         <div style="display: flex; align-items: center">
-                            <img class="ml--1 pl-0 mr-2" src="{{asset('assets/img/support.png')}}" alt="" style="width: 20px; background-position: left"> Victim Support
+                            <img class="ml--1 pl-0 mr-2" src="{{asset('assets/img/support_white.png')}}" alt="" style="width: 20px; background-position: left"> Victim Support
                         </div>
                     </a>
                 </li>
@@ -106,9 +113,17 @@ The above copyright notice and this permission notice shall be included in all c
 {{--                </li>--}}
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/about" target="_blank">
+                    <a class="nav-link" href="/tutorial">
                         <div style="display: flex; align-items: center">
-                            <img class="ml--1 pl-0 mr-2" src="{{asset('assets/img/teamwork.png')}}" alt="" style="width: 20px; background-position: left"> Unmochon Team
+                            <img class="ml--1 pl-0 mr-2" src="{{asset('assets/img/tutorial.png')}}" alt="" style="width: 20px; background-position: left"> Tutorial
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/team">
+                        <div style="display: flex; align-items: center">
+                            <img class="ml--1 pl-0 mr-2" src="{{asset('assets/img/teamwork_white.png')}}" alt="" style="width: 20px; background-position: left"> Unmochon Team
                         </div>
                     </a>
                 </li>
@@ -121,41 +136,30 @@ The above copyright notice and this permission notice shall be included in all c
 @yield('content')
 
 
-<footer class="footer" data-background-color="black" style="color: whitesmoke">
-    <div class="container">
-        <nav class="float-left">
-            <ul>
-                <li>
-                    <a href="/policy">
-                        Privacy Policy
-                    </a>
-                </li>
-                <li>
-                    <a href="/about">
-                        About Us
-                    </a>
-                </li>
-                <li>
-                    <a href="/team">
-                        Team
-                    </a>
-                </li>
-                <li>
-                    <a href="/database">
-                        Database
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        {{--        <div class="copyright float-right" style="font-size: small">--}}
+<footer class="footer bg-white" data-background-color="black" style="color: whitesmoke; position: fixed; width: 100%; display: flex; justify-content: center; bottom: 5px">
 
-        <div class="copyright float-right" style="font-size: small; font-weight: 400; color: whitesmoke">
-            Copyright &copy;
-            <script>
-                document.write(new Date().getFullYear())
-            </script>,  All rights reserved | by
-            <a href="/" target="_blank" class="text-success">unmochon.org</a>
-            {{--            Coded by <a href="https://facebook.com/hridoy100" target="_blank">Raihanul Alam Hridoy</a>.--}}
+    <div style="position: absolute; right: 50px; top: -120px;">
+        <img src="{{asset('assets/img/ict_div.png')}}" alt="" style="width: 150px">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <div style="position:absolute; bottom: 0">
+                    <h5 style="display: flex; color: black">Project Unmochon is funded by Information and Communication Technology  Division (ICTD), Bangladesh.</h5>
+                </div>
+            </div>
+            <div class="col-2">
+            </div>
+
+            {{--            <div class="copyright float-right" style="font-size: small; font-weight: 400; color: whitesmoke">--}}
+{{--                Copyright &copy;--}}
+{{--                <script>--}}
+{{--                    document.write(new Date().getFullYear())--}}
+{{--                </script>,  All rights reserved | by--}}
+{{--                <a href="/" target="_blank" class="text-success">unmochon.org</a>--}}
+{{--                --}}{{--            Coded by <a href="https://facebook.com/hridoy100" target="_blank">Raihanul Alam Hridoy</a>.--}}
+{{--            </div>--}}
         </div>
 {{--        <div><span class="btn btn-outline-primary align-middle">VISITORS: {{$analyticsData}}</span></div>--}}
 

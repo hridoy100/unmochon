@@ -1,0 +1,38 @@
+#root {
+  -fx-background-color:#FFFFFF;
+  -fx-border-radius:0,0,0;
+  -fx-border-width:0;
+  -fx-border-color:#111111;
+}
+
+
+#okk {
+  -fx-background-color:#1816B4;
+  -fx-background-insets: 0, 1, 2;
+  -fx-text-fill: white;
+  -fx-font-size:20;
+}
+
+#okk:hover {
+  -fx-background-color: #C8C7FC;
+}
+
+#okk:pressed {
+  -fx-background-color: #0F0E5A;
+}
+
+
+#sample *.text{
+  -fx-text-alignment: center;
+}
+#heading {
+  -fx-background-color:#DEDEDF;
+  -fx-font-size:13;
+  -fx-text-alignment: center;
+}
+
+#description {
+  -fx-background-color:#DEDEDF;
+  -fx-font-size:15;
+  -fx-text-alignment: center;
+}

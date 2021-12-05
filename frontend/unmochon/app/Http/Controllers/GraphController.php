@@ -10,7 +10,6 @@ use Facebook\Exceptions\FacebookSDKException;
 use Facebook\Facebook;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Log;
 
 class GraphController extends Controller
 {
@@ -96,15 +95,14 @@ class GraphController extends Controller
                 $post = $this->api->post('/' . $page_id . '/photos', [
                     'message' => $msg,
 //                    'source'  =>  $this->api->fileToUpload('https://buetcareerclub.org/test/public/img.jpg')
-                    'source'  =>  $this->api->fileToUpload('http://unmochon.org/storage/app/img/'.$image_name.".jpg")
+                    'source'  =>  $this->api->fileToUpload('http://unmochon.org/storage/app/img/'.$image_name.".jpeg")
                 ], $this->getPageAccessToken($page_id));
 //                dd("after accesstoken returned");
 //                $post = $post->getGraphNode()->asArray();
                 $image->is_posted_to_fb = 1;
                 $image->update();
             } catch (FacebookSDKException $e) {
-                Log::debug($e);
-                return response($e, 500);
+                dd($e); // handle exception
             }
         }
         return response("Images posted to fb");

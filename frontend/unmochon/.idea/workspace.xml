@@ -2,13 +2,296 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c79aa690-dd65-4701-853f-7086eb95a8ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/img/ela_apu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/hridoy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/letter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/shaid_hasan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/AutoLogout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/download.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/support.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/team.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/tutorial.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/about.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/hintsitem/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/hintsitem/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/hintsitem/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/hintsitem/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/hintsitem/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/hintsitem/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/hintsitem/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/icons/check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/icons/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/myfont/about-us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/myfont/camera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/myfont/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/myfont/cloud-computing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/myfont/edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/myfont/eraser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/myfont/floppy-disk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/myfont/questions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/Unmochon/protibadiJfx.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/about.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/hintsitem/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/hintsitem/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/hintsitem/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/hintsitem/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/hintsitem/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/hintsitem/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/hintsitem/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/icons/check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/icons/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/icons/harassment.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/icons/harassment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/myfont/about-us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/myfont/camera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/myfont/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/myfont/cloud-computing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/myfont/edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/myfont/eraser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/myfont/floppy-disk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/myfont/questions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/myfont/tips.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/notes_dont_delete.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/artifacts/unmochon_jar/protibadiJfx.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/artifacts/unmochon_jar/unmochon.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/artifacts/unmochon_jar/unmochon.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/about.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/ff.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/hintsitem/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/hintsitem/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/hintsitem/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/hintsitem/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/hintsitem/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/hintsitem/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/hintsitem/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/myfont/about-us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/myfont/camera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/myfont/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/myfont/cloud-computing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/myfont/edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/myfont/eraser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/myfont/floppy-disk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/myfont/questions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/myfont/tips.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/myfont/video.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/About.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/About2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/ConfirmDialouge.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/CustomCanvas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/FullScreenCapture$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/FullScreenCapture$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/FullScreenCapture$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/HintsController$1$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/HintsController$1$1$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/HintsController$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/HintsController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/HintsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/HintsData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/HintsLatest$1$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/HintsLatest$1$1$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/HintsLatest$1$1$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/HintsLatest$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/HintsLatest$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/HintsLatest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/HintsLatest2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/Main$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/Main$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewDrawings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$11$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$11$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$4$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$4$1$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$4$1$3$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$4$1$3$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$4$1$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$4$1$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$4$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/NewFirstController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/Timer$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/Timer$1$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/Timer$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/Timer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/UserInput.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/UserInputNext2$1$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/UserInputNext2$1$1$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/UserInputNext2$1$1$3$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/UserInputNext2$1$1$3$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/UserInputNext2$1$1$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/UserInputNext2$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/UserInputNext2$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/UserInputNext2$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/UserInputNext2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/UserInputNext3$1$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/UserInputNext3$1$1$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/UserInputNext3$1$1$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/UserInputNext3$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/UserInputNext3$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/UserInputNext3$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/UserInputNext3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/about_us.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/about_us2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/button2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/button3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/confirmdialouge.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/dialogue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/hints.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/hintsitem/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/hintsitem/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/hintsitem/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/hintsitem/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/hintsitem/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/hintsitem/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/hintsitem/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/hintsitem/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/hintslatest.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/hintslatest2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/icons/check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/icons/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/myfont/about-us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/myfont/camera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/myfont/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/myfont/cloud-computing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/myfont/edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/myfont/eraser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/myfont/floppy-disk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/myfont/questions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/myfont/tips.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/myfont/video.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/new_first.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/text.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/timer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/timer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/user_input.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/user_input_next2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/user_input_next3.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/unmochonJfx/ff.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out1/artifacts/prot/ao.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out1/artifacts/prot/app.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out1/artifacts/prot/protibadiJfx.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out1/artifacts/protibadiJfx_jar/app.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/about.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/ff.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/hintsitem/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/hintsitem/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/hintsitem/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/hintsitem/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/hintsitem/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/hintsitem/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/hintsitem/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/myfont/about-us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/myfont/camera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/myfont/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/myfont/cloud-computing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/myfont/edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/myfont/eraser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/myfont/floppy-disk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/myfont/questions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/myfont/tips.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/myfont/video.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/About.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/About2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/ConfirmDialouge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/CustomCanvas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/HintsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/HintsData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/HintsLatest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/HintsLatest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/NewDrawings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/NewFirstController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/Timer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/UserInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/UserInputNext2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/UserInputNext3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/about_us.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/about_us2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/button2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/button3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/confirmdialouge.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/dialogue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/hints.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/hintsitem/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/hintsitem/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/hintsitem/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/hintsitem/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/hintsitem/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/hintsitem/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/hintsitem/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/hintsitem/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/hintslatest.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/hintslatest2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/hintslatest3.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/icons/check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/icons/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/myfont/about-us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/myfont/camera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/myfont/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/myfont/cloud-computing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/myfont/edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/myfont/eraser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/myfont/floppy-disk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/myfont/questions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/myfont/tips.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/myfont/video.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/new_first.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/text.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/timer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/timer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/user_input.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/user_input_next2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/user_input_next3.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GraphController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GraphController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/database.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/database.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UnmochonJavaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UnmochonJavaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_09_20_192520_create_user_details_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_09_20_192520_create_user_details_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/DB/CommunicateWithPhp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/DB/CommunicateWithPhp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/encryption/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/encryption/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/FullScreenCapture.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/FullScreenCapture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/HttpPost.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/HttpPost.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/IEPencil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/IEPencil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/IEToolManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/IEToolManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/out/production/protibadiJfx/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/DB/CommunicateWithPhp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/DB/CommunicateWithPhp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/encryption/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/encryption/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/FullScreenCapture.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/FullScreenCapture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/HttpPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/HttpPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/IEPencil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/IEPencil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/IEToolManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/IEToolManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../source_code/unmochon_source_code/src/sample/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,5 +496,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=":bookmark: autologout add" />
+    <option name="LAST_COMMIT_MESSAGE" value=":bookmark: autologout add" />
   </component>
 </project>
