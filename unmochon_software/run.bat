@@ -1,0 +1,1 @@
+"jre1.8.0_111/bin/java.exe" -jar protibad.jar
